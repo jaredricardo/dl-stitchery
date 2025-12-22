@@ -4528,7 +4528,7 @@ button {
 }
 
 /*=== Button ====*/
-.btn, .shopify-payment-button .shopify-payment-button__button--unbranded, #challenge .shopify-challenge__button {
+.btn, .shopify-payment-button .shopify-payment-button__button--unbranded, #challenge .shopify-challenge__button, .button.klaviyo-bis-trigger {
   -webkit-user-select: none;
   user-select: none;
   -webkit-appearance: none;
@@ -4688,7 +4688,7 @@ button {
   --link-a70: var(--COLOR-TEXT-BTN-BLACK-A70);
 }
 
-.btn--solid.btn--primary, .btn--solid .btn--primary.shopify-payment-button__button--unbranded, .btn--primary .btn--solid.shopify-payment-button__button--unbranded, .btn--primary .btn--solid .shopify-payment-button__button--unbranded, .btn--solid .btn--primary .shopify-payment-button__button--unbranded {
+.btn--solid.btn--primary, .btn--solid .btn--primary.shopify-payment-button__button--unbranded, .btn--primary .btn--solid.shopify-payment-button__button--unbranded, .btn--primary .btn--solid .shopify-payment-button__button--unbranded, .btn--solid .btn--primary .shopify-payment-button__button--unbranded, .klaviyo-bis-trigger.button {
   --btn-border: var(--BTN-PRIMARY-BG);
   --btn-bg: var(--BTN-PRIMARY-BG);
   --btn-text: var(--BTN-PRIMARY-TEXT);
