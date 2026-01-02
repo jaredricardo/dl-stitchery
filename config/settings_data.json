@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "b2b_discount_percentage": 20,
     "color_scheme": "scheme-1",
     "menu_bg_color": "#fcfbf9",
     "header_link": "#212121",
@@ -44,7 +45,7 @@
     "product_grid_aspect_ratio": 1.2,
     "form_style": "modern",
     "show_newsletter": false,
-    "final_sale": true,
+    "final_sale": false,
     "quantity_style": "standard",
     "atc_show_product_price": true,
     "swatch_style": "circle",
@@ -55,7 +56,7 @@
     "sale_text_color": "#212121",
     "badge_bg_color": "#c0b9b8",
     "badge_text_color": "#212121",
-    "show_automatic_new_badge": true,
+    "show_automatic_new_badge": false,
     "new_badge_bg_color": "#c0b9b8",
     "new_badge_text_color": "#212121",
     "badge_new_date_limit": 20,

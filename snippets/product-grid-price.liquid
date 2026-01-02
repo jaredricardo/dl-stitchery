@@ -17,6 +17,19 @@
     assign product_price_min = product.price_min | money
     assign product_compare_at_price = product.compare_at_price | money
   endif
+
+  assign b2b_discount_percentage = settings.b2b_discount_percentage
+
+  if b2b_discount_percentage > 0 and customer.tags contains 'b2b'
+    assign amount_off = product.price_min | times: b2b_discount_percentage | divided_by: 100
+    assign product_price_min = product.price_min | minus: amount_off
+    if settings.currency_code_enable
+      assign product_price_min = product_price_min | money_with_currency
+    else
+      assign product_price_min = product_price_min | money
+    endif
+  endif
+
 -%}
 
 <span class="price{% if product.compare_at_price > product.price %} sale{% endif %}">

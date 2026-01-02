@@ -93,6 +93,17 @@
       });
     </script>
 
+    {% if customer %}
+      <script>
+        console.log('//// customer logged in ////')
+      </script>
+      {% if customer.tags contains 'b2b' %}
+        <script>
+          console.log('//// b2b customer ////')
+        </script>
+      {% endif %}
+    {% endif %}
+
     <!-- And above this comment line ================================================== -->
   </body>
 </html>

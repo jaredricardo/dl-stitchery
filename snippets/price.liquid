@@ -79,6 +79,19 @@
   if target.metafields.theme.final_sale.type == 'boolean' and target.metafields.theme.final_sale.value == true
     assign final_sale = true
   endif
+
+  assign b2b_discount_percentage = settings.b2b_discount_percentage
+
+  if b2b_discount_percentage > 0 and customer.tags contains 'b2b'
+    assign amount_off = target.price | times: b2b_discount_percentage | divided_by: 100
+    assign target_price = target.price | minus: amount_off
+    if settings.currency_code_enable
+      assign money_price = target_price | money_with_currency
+    else
+      assign money_price = target_price | money
+    endif
+  endif
+
 -%}
 
 {%- unless target == null and onboarding_product == null -%}
@@ -160,6 +173,9 @@
               <span>{{ price_difference }}</span>
             {% endif %}
             {{ 'products.product.off' | t }}
+            {% if customer.tags contains 'b2b' %}
+              + B2B Discount
+            {% endif %}
           </span>
         {%- endif -%}
 

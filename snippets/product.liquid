@@ -766,7 +766,9 @@
                       {%- endif -%}
 
                       {%- if on_sale and product.available and block.settings.sale_badge -%}
-                        <span class="badge-box sale-box">{{ 'products.product.on_sale' | t }}</span>
+                        <span class="badge-box sale-box">
+                          {{ 'products.product.on_sale' | t }}
+                        </span>
                       {%- endif -%}
                     </div>
 

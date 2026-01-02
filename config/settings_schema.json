@@ -8,6 +8,21 @@
     "theme_documentation_url": "https://broadcast.presidiocreative.com"
   },
   {
+    "name": "B2B Settings",
+    "settings": [
+      {
+        "type": "range",
+        "id": "b2b_discount_percentage",
+        "label": "B2B Discount Percentage",
+        "default": 10,
+        "step": 1,
+        "min": 0,
+        "max": 100,
+        "info": "***Percentage discount applied to all products for B2B customers. 0 turns off the discount. This discount must be made in the discount admin as an automatic discount with the same percentage."
+      }
+    ]
+  },
+  {
     "name": "Colors",
     "settings": [
       {

@@ -16,6 +16,19 @@
     assign product_price_min = product.price_min | money
     assign product_compare_at_price = product.compare_at_price | money
   endif
+
+  assign b2b_discount_percentage = settings.b2b_discount_percentage
+
+  if b2b_discount_percentage > 0 and customer.tags contains 'b2b'
+    assign amount_off = upsell_variant.price | times: b2b_discount_percentage | divided_by: 100
+    assign upsell_variant_price = upsell_variant.price | minus: amount_off
+    if settings.currency_code_enable
+      assign upsell_variant_price = upsell_variant_price | money_with_currency
+    else
+      assign upsell_variant_price = upsell_variant_price | money
+    endif
+  endif
+  
 -%}
 
 <a href="{{ product.url }}" class="widget__column">

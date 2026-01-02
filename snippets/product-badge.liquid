@@ -20,4 +20,7 @@
   data-aos-anchor="{{ aos_anchor }}"
 >
   {{ badge_text }}
+  {% if badge_class contains 'sale-box' and customer.tags contains 'b2b' %}
+    + B2B Discount
+  {% endif %}
 </span>
