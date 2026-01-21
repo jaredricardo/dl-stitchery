@@ -1240,6 +1240,10 @@
         "padding_bottom": 0,
         "show_placeholder": true
       }
+    },
+    "176897526404e90a93": {
+      "type": "_blocks",
+      "settings": {}
     }
   },
   "order": [
@@ -1261,6 +1265,7 @@
     "section-rich-text",
     "section-columns-0",
     "section-text-row",
-    "section-hero-scrolling"
+    "section-hero-scrolling",
+    "176897526404e90a93"
   ]
 }
