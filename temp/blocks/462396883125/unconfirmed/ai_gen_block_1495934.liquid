@@ -1,6 +1,953 @@
+{% doc %}
+  @prompt
+    Remove the title sections for each state in the State Selector block while keeping the state selection functionality intact
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-state-selector-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: {{ block.settings.section_padding }}px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-state-selector-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-state-selector-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .ai-state-group-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-state-button-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: {{ block.settings.button_bg_color }};
+    color: {{ block.settings.button_text_color }};
+    border: 2px solid {{ block.settings.button_border_color }};
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: {{ block.settings.button_font_size }}px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .ai-state-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_bg_color }};
+    color: {{ block.settings.button_hover_text_color }};
+    border-color: {{ block.settings.button_hover_border_color }};
+    transform: translateY(-2px);
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-state-selector-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .ai-state-button-{{ ai_gen_id }} {
+      font-size: {{ block.settings.button_font_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<state-selector-{{ ai_gen_id }} class="ai-state-selector-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-state-selector-container-{{ ai_gen_id }}">
+    <div class="ai-state-selector-grid-{{ ai_gen_id }}">
+      <div class="ai-state-group-{{ ai_gen_id }}">
+        {% if block.settings.state_1_name != blank and block.settings.state_1_url != blank %}
+          <a href="{{ block.settings.state_1_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_1_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_2_name != blank and block.settings.state_2_url != blank %}
+          <a href="{{ block.settings.state_2_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_2_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_3_name != blank and block.settings.state_3_url != blank %}
+          <a href="{{ block.settings.state_3_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_3_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_4_name != blank and block.settings.state_4_url != blank %}
+          <a href="{{ block.settings.state_4_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_4_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_5_name != blank and block.settings.state_5_url != blank %}
+          <a href="{{ block.settings.state_5_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_5_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_6_name != blank and block.settings.state_6_url != blank %}
+          <a href="{{ block.settings.state_6_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_6_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_7_name != blank and block.settings.state_7_url != blank %}
+          <a href="{{ block.settings.state_7_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_7_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_8_name != blank and block.settings.state_8_url != blank %}
+          <a href="{{ block.settings.state_8_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_8_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_9_name != blank and block.settings.state_9_url != blank %}
+          <a href="{{ block.settings.state_9_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_9_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_10_name != blank and block.settings.state_10_url != blank %}
+          <a href="{{ block.settings.state_10_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_10_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_11_name != blank and block.settings.state_11_url != blank %}
+          <a href="{{ block.settings.state_11_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_11_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_12_name != blank and block.settings.state_12_url != blank %}
+          <a href="{{ block.settings.state_12_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_12_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_13_name != blank and block.settings.state_13_url != blank %}
+          <a href="{{ block.settings.state_13_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_13_name }}
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="ai-state-group-{{ ai_gen_id }}">
+        {% if block.settings.state_14_name != blank and block.settings.state_14_url != blank %}
+          <a href="{{ block.settings.state_14_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_14_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_15_name != blank and block.settings.state_15_url != blank %}
+          <a href="{{ block.settings.state_15_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_15_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_16_name != blank and block.settings.state_16_url != blank %}
+          <a href="{{ block.settings.state_16_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_16_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_17_name != blank and block.settings.state_17_url != blank %}
+          <a href="{{ block.settings.state_17_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_17_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_18_name != blank and block.settings.state_18_url != blank %}
+          <a href="{{ block.settings.state_18_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_18_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_19_name != blank and block.settings.state_19_url != blank %}
+          <a href="{{ block.settings.state_19_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_19_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_20_name != blank and block.settings.state_20_url != blank %}
+          <a href="{{ block.settings.state_20_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_20_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_21_name != blank and block.settings.state_21_url != blank %}
+          <a href="{{ block.settings.state_21_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_21_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_22_name != blank and block.settings.state_22_url != blank %}
+          <a href="{{ block.settings.state_22_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_22_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_23_name != blank and block.settings.state_23_url != blank %}
+          <a href="{{ block.settings.state_23_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_23_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_24_name != blank and block.settings.state_24_url != blank %}
+          <a href="{{ block.settings.state_24_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_24_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_25_name != blank and block.settings.state_25_url != blank %}
+          <a href="{{ block.settings.state_25_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_25_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_26_name != blank and block.settings.state_26_url != blank %}
+          <a href="{{ block.settings.state_26_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_26_name }}
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="ai-state-group-{{ ai_gen_id }}">
+        {% if block.settings.state_27_name != blank and block.settings.state_27_url != blank %}
+          <a href="{{ block.settings.state_27_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_27_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_28_name != blank and block.settings.state_28_url != blank %}
+          <a href="{{ block.settings.state_28_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_28_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_29_name != blank and block.settings.state_29_url != blank %}
+          <a href="{{ block.settings.state_29_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_29_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_30_name != blank and block.settings.state_30_url != blank %}
+          <a href="{{ block.settings.state_30_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_30_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_31_name != blank and block.settings.state_31_url != blank %}
+          <a href="{{ block.settings.state_31_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_31_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_32_name != blank and block.settings.state_32_url != blank %}
+          <a href="{{ block.settings.state_32_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_32_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_33_name != blank and block.settings.state_33_url != blank %}
+          <a href="{{ block.settings.state_33_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_33_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_34_name != blank and block.settings.state_34_url != blank %}
+          <a href="{{ block.settings.state_34_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_34_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_35_name != blank and block.settings.state_35_url != blank %}
+          <a href="{{ block.settings.state_35_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_35_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_36_name != blank and block.settings.state_36_url != blank %}
+          <a href="{{ block.settings.state_36_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_36_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_37_name != blank and block.settings.state_37_url != blank %}
+          <a href="{{ block.settings.state_37_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_37_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_38_name != blank and block.settings.state_38_url != blank %}
+          <a href="{{ block.settings.state_38_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_38_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_39_name != blank and block.settings.state_39_url != blank %}
+          <a href="{{ block.settings.state_39_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_39_name }}
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="ai-state-group-{{ ai_gen_id }}">
+        {% if block.settings.state_40_name != blank and block.settings.state_40_url != blank %}
+          <a href="{{ block.settings.state_40_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_40_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_41_name != blank and block.settings.state_41_url != blank %}
+          <a href="{{ block.settings.state_41_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_41_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_42_name != blank and block.settings.state_42_url != blank %}
+          <a href="{{ block.settings.state_42_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_42_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_43_name != blank and block.settings.state_43_url != blank %}
+          <a href="{{ block.settings.state_43_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_43_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_44_name != blank and block.settings.state_44_url != blank %}
+          <a href="{{ block.settings.state_44_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_44_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_45_name != blank and block.settings.state_45_url != blank %}
+          <a href="{{ block.settings.state_45_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_45_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_46_name != blank and block.settings.state_46_url != blank %}
+          <a href="{{ block.settings.state_46_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_46_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_47_name != blank and block.settings.state_47_url != blank %}
+          <a href="{{ block.settings.state_47_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_47_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_48_name != blank and block.settings.state_48_url != blank %}
+          <a href="{{ block.settings.state_48_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_48_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_49_name != blank and block.settings.state_49_url != blank %}
+          <a href="{{ block.settings.state_49_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_49_name }}
+          </a>
+        {% endif %}
+        {% if block.settings.state_50_name != blank and block.settings.state_50_url != blank %}
+          <a href="{{ block.settings.state_50_url }}" class="ai-state-button-{{ ai_gen_id }}">
+            {{ block.settings.state_50_name }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</state-selector-{{ ai_gen_id }}>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "State selector",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "Maximum width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#fcfbf9"
+    },
+    {
+      "type": "header",
+      "content": "Button style"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text color",
+      "default": "#212121"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Border color",
+      "default": "#d1cdc4"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg_color",
+      "label": "Hover background color",
+      "default": "#ab8c52"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Hover text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_border_color",
+      "label": "Hover border color",
+      "default": "#ab8c52"
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "States 1-13"
+    },
+    {
+      "type": "text",
+      "id": "state_1_name",
+      "label": "State 1 name"
+    },
+    {
+      "type": "url",
+      "id": "state_1_url",
+      "label": "State 1 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_2_name",
+      "label": "State 2 name"
+    },
+    {
+      "type": "url",
+      "id": "state_2_url",
+      "label": "State 2 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_3_name",
+      "label": "State 3 name"
+    },
+    {
+      "type": "url",
+      "id": "state_3_url",
+      "label": "State 3 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_4_name",
+      "label": "State 4 name"
+    },
+    {
+      "type": "url",
+      "id": "state_4_url",
+      "label": "State 4 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_5_name",
+      "label": "State 5 name"
+    },
+    {
+      "type": "url",
+      "id": "state_5_url",
+      "label": "State 5 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_6_name",
+      "label": "State 6 name"
+    },
+    {
+      "type": "url",
+      "id": "state_6_url",
+      "label": "State 6 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_7_name",
+      "label": "State 7 name"
+    },
+    {
+      "type": "url",
+      "id": "state_7_url",
+      "label": "State 7 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_8_name",
+      "label": "State 8 name"
+    },
+    {
+      "type": "url",
+      "id": "state_8_url",
+      "label": "State 8 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_9_name",
+      "label": "State 9 name"
+    },
+    {
+      "type": "url",
+      "id": "state_9_url",
+      "label": "State 9 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_10_name",
+      "label": "State 10 name"
+    },
+    {
+      "type": "url",
+      "id": "state_10_url",
+      "label": "State 10 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_11_name",
+      "label": "State 11 name"
+    },
+    {
+      "type": "url",
+      "id": "state_11_url",
+      "label": "State 11 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_12_name",
+      "label": "State 12 name"
+    },
+    {
+      "type": "url",
+      "id": "state_12_url",
+      "label": "State 12 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_13_name",
+      "label": "State 13 name"
+    },
+    {
+      "type": "url",
+      "id": "state_13_url",
+      "label": "State 13 URL"
+    },
+    {
+      "type": "header",
+      "content": "States 14-26"
+    },
+    {
+      "type": "text",
+      "id": "state_14_name",
+      "label": "State 14 name"
+    },
+    {
+      "type": "url",
+      "id": "state_14_url",
+      "label": "State 14 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_15_name",
+      "label": "State 15 name"
+    },
+    {
+      "type": "url",
+      "id": "state_15_url",
+      "label": "State 15 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_16_name",
+      "label": "State 16 name"
+    },
+    {
+      "type": "url",
+      "id": "state_16_url",
+      "label": "State 16 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_17_name",
+      "label": "State 17 name"
+    },
+    {
+      "type": "url",
+      "id": "state_17_url",
+      "label": "State 17 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_18_name",
+      "label": "State 18 name"
+    },
+    {
+      "type": "url",
+      "id": "state_18_url",
+      "label": "State 18 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_19_name",
+      "label": "State 19 name"
+    },
+    {
+      "type": "url",
+      "id": "state_19_url",
+      "label": "State 19 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_20_name",
+      "label": "State 20 name"
+    },
+    {
+      "type": "url",
+      "id": "state_20_url",
+      "label": "State 20 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_21_name",
+      "label": "State 21 name"
+    },
+    {
+      "type": "url",
+      "id": "state_21_url",
+      "label": "State 21 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_22_name",
+      "label": "State 22 name"
+    },
+    {
+      "type": "url",
+      "id": "state_22_url",
+      "label": "State 22 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_23_name",
+      "label": "State 23 name"
+    },
+    {
+      "type": "url",
+      "id": "state_23_url",
+      "label": "State 23 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_24_name",
+      "label": "State 24 name"
+    },
+    {
+      "type": "url",
+      "id": "state_24_url",
+      "label": "State 24 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_25_name",
+      "label": "State 25 name"
+    },
+    {
+      "type": "url",
+      "id": "state_25_url",
+      "label": "State 25 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_26_name",
+      "label": "State 26 name"
+    },
+    {
+      "type": "url",
+      "id": "state_26_url",
+      "label": "State 26 URL"
+    },
+    {
+      "type": "header",
+      "content": "States 27-39"
+    },
+    {
+      "type": "text",
+      "id": "state_27_name",
+      "label": "State 27 name"
+    },
+    {
+      "type": "url",
+      "id": "state_27_url",
+      "label": "State 27 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_28_name",
+      "label": "State 28 name"
+    },
+    {
+      "type": "url",
+      "id": "state_28_url",
+      "label": "State 28 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_29_name",
+      "label": "State 29 name"
+    },
+    {
+      "type": "url",
+      "id": "state_29_url",
+      "label": "State 29 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_30_name",
+      "label": "State 30 name"
+    },
+    {
+      "type": "url",
+      "id": "state_30_url",
+      "label": "State 30 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_31_name",
+      "label": "State 31 name"
+    },
+    {
+      "type": "url",
+      "id": "state_31_url",
+      "label": "State 31 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_32_name",
+      "label": "State 32 name"
+    },
+    {
+      "type": "url",
+      "id": "state_32_url",
+      "label": "State 32 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_33_name",
+      "label": "State 33 name"
+    },
+    {
+      "type": "url",
+      "id": "state_33_url",
+      "label": "State 33 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_34_name",
+      "label": "State 34 name"
+    },
+    {
+      "type": "url",
+      "id": "state_34_url",
+      "label": "State 34 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_35_name",
+      "label": "State 35 name"
+    },
+    {
+      "type": "url",
+      "id": "state_35_url",
+      "label": "State 35 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_36_name",
+      "label": "State 36 name"
+    },
+    {
+      "type": "url",
+      "id": "state_36_url",
+      "label": "State 36 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_37_name",
+      "label": "State 37 name"
+    },
+    {
+      "type": "url",
+      "id": "state_37_url",
+      "label": "State 37 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_38_name",
+      "label": "State 38 name"
+    },
+    {
+      "type": "url",
+      "id": "state_38_url",
+      "label": "State 38 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_39_name",
+      "label": "State 39 name"
+    },
+    {
+      "type": "url",
+      "id": "state_39_url",
+      "label": "State 39 URL"
+    },
+    {
+      "type": "header",
+      "content": "States 40-50"
+    },
+    {
+      "type": "text",
+      "id": "state_40_name",
+      "label": "State 40 name"
+    },
+    {
+      "type": "url",
+      "id": "state_40_url",
+      "label": "State 40 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_41_name",
+      "label": "State 41 name"
+    },
+    {
+      "type": "url",
+      "id": "state_41_url",
+      "label": "State 41 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_42_name",
+      "label": "State 42 name"
+    },
+    {
+      "type": "url",
+      "id": "state_42_url",
+      "label": "State 42 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_43_name",
+      "label": "State 43 name"
+    },
+    {
+      "type": "url",
+      "id": "state_43_url",
+      "label": "State 43 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_44_name",
+      "label": "State 44 name"
+    },
+    {
+      "type": "url",
+      "id": "state_44_url",
+      "label": "State 44 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_45_name",
+      "label": "State 45 name"
+    },
+    {
+      "type": "url",
+      "id": "state_45_url",
+      "label": "State 45 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_46_name",
+      "label": "State 46 name"
+    },
+    {
+      "type": "url",
+      "id": "state_46_url",
+      "label": "State 46 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_47_name",
+      "label": "State 47 name"
+    },
+    {
+      "type": "url",
+      "id": "state_47_url",
+      "label": "State 47 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_48_name",
+      "label": "State 48 name"
+    },
+    {
+      "type": "url",
+      "id": "state_48_url",
+      "label": "State 48 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_49_name",
+      "label": "State 49 name"
+    },
+    {
+      "type": "url",
+      "id": "state_49_url",
+      "label": "State 49 URL"
+    },
+    {
+      "type": "text",
+      "id": "state_50_name",
+      "label": "State 50 name"
+    },
+    {
+      "type": "url",
+      "id": "state_50_url",
+      "label": "State 50 URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "State selector"
+    }
+  ]
+}
 {% endschema %}
