@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "section-divider": {
@@ -25,10 +34,345 @@
         "padding_bottom": 50,
         "heading_tag": "automatic"
       }
+    },
+    "section_columns_kFR9BU": {
+      "type": "section-columns",
+      "blocks": {
+        "image_fG8ak7": {
+          "type": "image",
+          "settings": {
+            "image_width": 66,
+            "image_shape": "normal",
+            "title": "Add a title or tagline",
+            "heading_font_size": "heading-small",
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_84Kta3": {
+          "type": "image",
+          "settings": {
+            "image_width": 66,
+            "image_shape": "normal",
+            "title": "Add a title or tagline",
+            "heading_font_size": "heading-small",
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_9wY3En": {
+          "type": "image",
+          "settings": {
+            "image_width": 66,
+            "image_shape": "normal",
+            "title": "Add a title or tagline",
+            "heading_font_size": "heading-small",
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_fG8ak7",
+        "image_84Kta3",
+        "image_9wY3En"
+      ],
+      "name": "Text columns with images",
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "align_columns": "flex-align-center",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_accordion_group_UxNWqf": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_YijCqa": {
+          "type": "heading",
+          "settings": {
+            "title": "Retailers by State"
+          }
+        },
+        "question_dnenFe": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_MDmwh4": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_cc77aR": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_YijCqa",
+        "question_dnenFe",
+        "question_MDmwh4",
+        "question_cc77aR"
+      ],
+      "disabled": true,
+      "name": "Accordion group",
+      "settings": {
+        "heading_font_size": "heading-medium",
+        "question_font_size": "heading-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "17689745451c82a946": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_fc743cd_c6nBLH": {
+          "type": "ai_gen_block_fc743cd",
+          "settings": {
+            "title": "Find Information by State",
+            "description": "Select your state from the dropdown to view specific information.",
+            "title_size": 32,
+            "description_size": 16,
+            "dropdown_label": "Select a state",
+            "placeholder_text": "Choose your state...",
+            "default_message": "Please select a state to view information.",
+            "state_title_size": 24,
+            "content_text_size": 16,
+            "max_width": 1000,
+            "border_radius": 8,
+            "background_color": "#fcfbf9",
+            "content_bg_color": "#ffffff",
+            "dropdown_bg_color": "#ffffff",
+            "text_color": "#212121",
+            "border_color": "#d1cdc4",
+            "accent_color": "#ab8c52",
+            "state_1_name": "Alabama",
+            "state_1_title": "",
+            "state_1_content": "<p><strong>Needleworks</strong></p><p>2810 Crescent Ave</p><p>Homewood, AL 35209</p><p>205-870-5191</p><p><a href=\"http://www.gritsneedlepoint.com/\" target=\"_blank\">www.gritsneedlepoint.com</a></p><p>​</p><p><strong>The Needle Bug</strong></p><p>7012 Vaughn Road</p><p>Montgomery, AL 36116</p><p>334-270-0064</p><p><a href=\"http://www.theneedlebug.com/\" target=\"_blank\">www.theneedlebug.com</a></p><p>​</p><p><strong>Magic City Needlepoint</strong></p><p>2531 Rocky Ridge Road, Ste. 121</p><p>Vestavia Hills, AL 35243</p><p>205-721-7277</p><p><a href=\"http://www.magiccityneedlepoint.com/\" target=\"_blank\">www.magiccityneedlepoint.com</a></p>",
+            "state_2_name": "",
+            "state_2_title": "",
+            "state_2_content": "",
+            "state_3_name": "",
+            "state_3_title": "",
+            "state_3_content": "",
+            "state_4_name": "",
+            "state_4_title": "",
+            "state_4_content": "",
+            "state_5_name": "",
+            "state_5_title": "",
+            "state_5_content": "",
+            "state_6_name": "",
+            "state_6_title": "",
+            "state_6_content": "",
+            "state_7_name": "",
+            "state_7_title": "",
+            "state_7_content": "",
+            "state_8_name": "",
+            "state_8_title": "",
+            "state_8_content": "",
+            "state_9_name": "",
+            "state_9_title": "",
+            "state_9_content": "",
+            "state_10_name": "",
+            "state_10_title": "",
+            "state_10_content": "",
+            "state_11_name": "",
+            "state_11_title": "",
+            "state_11_content": "",
+            "state_12_name": "",
+            "state_12_title": "",
+            "state_12_content": "",
+            "state_13_name": "",
+            "state_13_title": "",
+            "state_13_content": "",
+            "state_14_name": "",
+            "state_14_title": "",
+            "state_14_content": "",
+            "state_15_name": "",
+            "state_15_title": "",
+            "state_15_content": "",
+            "state_16_name": "",
+            "state_16_title": "",
+            "state_16_content": "",
+            "state_17_name": "",
+            "state_17_title": "",
+            "state_17_content": "",
+            "state_18_name": "",
+            "state_18_title": "",
+            "state_18_content": "",
+            "state_19_name": "",
+            "state_19_title": "",
+            "state_19_content": "",
+            "state_20_name": "",
+            "state_20_title": "",
+            "state_20_content": "",
+            "state_21_name": "",
+            "state_21_title": "",
+            "state_21_content": "",
+            "state_22_name": "",
+            "state_22_title": "",
+            "state_22_content": "",
+            "state_23_name": "",
+            "state_23_title": "",
+            "state_23_content": "",
+            "state_24_name": "",
+            "state_24_title": "",
+            "state_24_content": "",
+            "state_25_name": "",
+            "state_25_title": "",
+            "state_25_content": "",
+            "state_26_name": "",
+            "state_26_title": "",
+            "state_26_content": "",
+            "state_27_name": "",
+            "state_27_title": "",
+            "state_27_content": "",
+            "state_28_name": "",
+            "state_28_title": "",
+            "state_28_content": "",
+            "state_29_name": "",
+            "state_29_title": "",
+            "state_29_content": "",
+            "state_30_name": "",
+            "state_30_title": "",
+            "state_30_content": "",
+            "state_31_name": "",
+            "state_31_title": "",
+            "state_31_content": "",
+            "state_32_name": "",
+            "state_32_title": "",
+            "state_32_content": "",
+            "state_33_name": "",
+            "state_33_title": "",
+            "state_33_content": "",
+            "state_34_name": "",
+            "state_34_title": "",
+            "state_34_content": "",
+            "state_35_name": "",
+            "state_35_title": "",
+            "state_35_content": "",
+            "state_36_name": "",
+            "state_36_title": "",
+            "state_36_content": "",
+            "state_37_name": "",
+            "state_37_title": "",
+            "state_37_content": "",
+            "state_38_name": "",
+            "state_38_title": "",
+            "state_38_content": "",
+            "state_39_name": "",
+            "state_39_title": "",
+            "state_39_content": "",
+            "state_40_name": "",
+            "state_40_title": "",
+            "state_40_content": "",
+            "state_41_name": "",
+            "state_41_title": "",
+            "state_41_content": "",
+            "state_42_name": "",
+            "state_42_title": "",
+            "state_42_content": "",
+            "state_43_name": "",
+            "state_43_title": "",
+            "state_43_content": "",
+            "state_44_name": "",
+            "state_44_title": "",
+            "state_44_content": "",
+            "state_45_name": "",
+            "state_45_title": "",
+            "state_45_content": "",
+            "state_46_name": "",
+            "state_46_title": "",
+            "state_46_content": "",
+            "state_47_name": "",
+            "state_47_title": "",
+            "state_47_content": "",
+            "state_48_name": "",
+            "state_48_title": "",
+            "state_48_content": "",
+            "state_49_name": "",
+            "state_49_title": "",
+            "state_49_content": "",
+            "state_50_name": "",
+            "state_50_title": "",
+            "state_50_content": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_fc743cd_c6nBLH"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "section-divider",
-    "main-page"
+    "main-page",
+    "section_columns_kFR9BU",
+    "section_accordion_group_UxNWqf",
+    "17689745451c82a946"
   ]
 }
