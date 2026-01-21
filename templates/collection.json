@@ -37,60 +37,6 @@
         "padding_bottom": 0
       }
     },
-    "section-highlights": {
-      "type": "section-highlights",
-      "blocks": {
-        "highlight": {
-          "type": "highlight",
-          "settings": {
-            "heading": "New Arrivals",
-            "url": "",
-            "color": "#212121",
-            "bg_color": "#f5f2ec",
-            "border_color": "#f5f2ec"
-          }
-        },
-        "highlight-0": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Best Sellers",
-            "url": "",
-            "color": "#212121",
-            "bg_color": "#f5f2ec",
-            "border_color": "#f5f2ec"
-          }
-        },
-        "highlight-1": {
-          "type": "highlight",
-          "settings": {
-            "heading": "Sale",
-            "url": "",
-            "color": "#212121",
-            "bg_color": "#f5f2ec",
-            "border_color": "#f5f2ec"
-          }
-        }
-      },
-      "block_order": [
-        "highlight",
-        "highlight-0",
-        "highlight-1"
-      ],
-      "settings": {
-        "style": "button",
-        "grid": 6,
-        "heading": "",
-        "heading_position": "text-center",
-        "heading_font_size": "heading-large",
-        "text_font_size": "body-small",
-        "width": "wrapper--full-padded",
-        "layout_mobile": "2",
-        "color_scheme": "scheme-1",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "heading_tag": "automatic"
-      }
-    },
     "subcollections": {
       "type": "subcollections",
       "disabled": true,
@@ -165,7 +111,7 @@
         "button_text": "",
         "button_url": "shopify://collections",
         "button_type": "btn--primary",
-        "button_size": "",
+        "button_size": "btn--small",
         "button_style": "btn--solid",
         "show_arrow": false,
         "aspect_ratio": 1,
@@ -241,7 +187,6 @@
   "order": [
     "section-divider",
     "collection-image-with-title",
-    "section-highlights",
     "subcollections",
     "section_collections_list_kW6ier",
     "collection"
