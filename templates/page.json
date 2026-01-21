@@ -21,6 +21,7 @@
     },
     "main-page": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "show_title": true,
@@ -35,100 +36,14 @@
         "heading_tag": "automatic"
       }
     },
-    "section_columns_kFR9BU": {
-      "type": "section-columns",
-      "blocks": {
-        "image_fG8ak7": {
-          "type": "image",
-          "settings": {
-            "image_width": 66,
-            "image_shape": "normal",
-            "title": "Add a title or tagline",
-            "heading_font_size": "heading-small",
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_84Kta3": {
-          "type": "image",
-          "settings": {
-            "image_width": 66,
-            "image_shape": "normal",
-            "title": "Add a title or tagline",
-            "heading_font_size": "heading-small",
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        },
-        "image_9wY3En": {
-          "type": "image",
-          "settings": {
-            "image_width": 66,
-            "image_shape": "normal",
-            "title": "Add a title or tagline",
-            "heading_font_size": "heading-small",
-            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-            "text_font_size": "body-medium",
-            "button_text": "Learn more",
-            "button_url": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "image_aspect_ratio": 1,
-            "mobile_image_aspect_ratio": 1,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image_fG8ak7",
-        "image_84Kta3",
-        "image_9wY3En"
-      ],
-      "name": "Text columns with images",
-      "settings": {
-        "title": "",
-        "heading_font_size": "heading-medium",
-        "align_heading": "text-left",
-        "align_text": "text-left",
-        "width": "wrapper",
-        "align_columns": "flex-align-center",
-        "layout": "grid",
-        "grid": 3,
-        "layout_mobile": "slider",
-        "color_scheme": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "heading_tag": "automatic"
-      }
-    },
     "17689745451c82a946": {
       "type": "_blocks",
       "blocks": {
         "ai_gen_block_fc743cd_c6nBLH": {
           "type": "ai_gen_block_fc743cd",
           "settings": {
-            "title": "Find Information by State",
-            "description": "Select your state from the dropdown to view specific information.",
+            "title": "Find Retailers by State",
+            "description": "Select your state from the dropdown to view available retailers.",
             "title_size": 32,
             "description_size": 16,
             "dropdown_label": "Select a state",
@@ -302,6 +217,92 @@
         "ai_gen_block_fc743cd_c6nBLH"
       ],
       "settings": {}
+    },
+    "section_columns_kFR9BU": {
+      "type": "section-columns",
+      "blocks": {
+        "image_fG8ak7": {
+          "type": "image",
+          "settings": {
+            "image_width": 66,
+            "image_shape": "normal",
+            "title": "Add a title or tagline",
+            "heading_font_size": "heading-small",
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_84Kta3": {
+          "type": "image",
+          "settings": {
+            "image_width": 66,
+            "image_shape": "normal",
+            "title": "Add a title or tagline",
+            "heading_font_size": "heading-small",
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_9wY3En": {
+          "type": "image",
+          "settings": {
+            "image_width": 66,
+            "image_shape": "normal",
+            "title": "Add a title or tagline",
+            "heading_font_size": "heading-small",
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "text_font_size": "body-medium",
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_fG8ak7",
+        "image_84Kta3",
+        "image_9wY3En"
+      ],
+      "name": "Text columns with images",
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "align_columns": "flex-align-center",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
     }
   },
   "order": [
