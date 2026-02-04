@@ -102,7 +102,7 @@
         "header_style": "logo_center_menu_left",
         "show_separator_line": false,
         "header_border_color": "",
-        "separator_opacity": 100,
+        "separator_opacity": 0,
         "show_icons": true,
         "icon_as_circle": false,
         "cart_icon_family": "bag",
