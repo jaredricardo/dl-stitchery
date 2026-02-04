@@ -17,9 +17,9 @@
         "social": {
           "type": "social",
           "settings": {
-            "title": "About the Brand",
+            "title": "Connect with Us",
             "heading_font_size": "heading-x-small",
-            "text": "",
+            "text": "<p>elizabethnagle@icloud.com</p><p>203-249-7930</p>",
             "column_width": 25,
             "enable_follow_on_shop": false,
             "enable_accordion": false
