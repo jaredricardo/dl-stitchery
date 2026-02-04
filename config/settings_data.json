@@ -11,11 +11,11 @@
   "current": {
     "b2b_discount_percentage": 20,
     "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
-    "menu_bg_color": "#fcfbf9",
-    "header_link": "#212121",
-    "submenu_bg_color": "#fcfbf9",
-    "submenu_link_color": "#212121",
-    "menu_transparent_color": "#fcfbf9",
+    "menu_bg_color": "#ffffff",
+    "header_link": "#14264b",
+    "submenu_bg_color": "#ffffff",
+    "submenu_link_color": "#14264b",
+    "menu_transparent_color": "#ffffff",
     "sale_color": "#212121",
     "type_nav_font": "dm_sans_n4",
     "type_base_font": "dm_sans_n4",
@@ -289,7 +289,7 @@
           "btn_secondary_border": "#14264b",
           "accent": "#ffd700",
           "lines_and_border": "#14264b",
-          "overlay": "#14264b7c",
+          "overlay": "#14264b7d",
           "links": "#14264b"
         }
       },
@@ -333,7 +333,7 @@
         "settings": {
           "section_text": "#212121",
           "section_bg": "#ffd7002e",
-          "section_bg_light": "#14264b7c",
+          "section_bg_light": "#14264b7d",
           "section_bg_gradient": "",
           "btn_primary_bg": "#212121",
           "btn_primary_text": "#ffffff",
