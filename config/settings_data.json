@@ -10,7 +10,7 @@
 {
   "current": {
     "b2b_discount_percentage": 20,
-    "color_scheme": "scheme-1",
+    "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
     "menu_bg_color": "#fcfbf9",
     "header_link": "#212121",
     "submenu_bg_color": "#fcfbf9",
@@ -272,6 +272,78 @@
           "accent": "#ab8c52",
           "lines_and_border": "#d1cdc4",
           "overlay": "#000000",
+          "links": "#282c2e"
+        }
+      },
+      "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6": {
+        "settings": {
+          "section_text": "#000000",
+          "section_bg": "#fcfbf9",
+          "section_bg_light": "#fcfbf9",
+          "section_bg_gradient": "",
+          "btn_primary_bg": "#14264b",
+          "btn_primary_text": "#ffffff",
+          "btn_primary_border": "#000000",
+          "btn_secondary_bg": "#14264b",
+          "btn_secondary_text": "#ffffff",
+          "btn_secondary_border": "#000000",
+          "accent": "#ffd700",
+          "lines_and_border": "#d1cdc4",
+          "overlay": "#00000021",
+          "links": "#282c2e"
+        }
+      },
+      "scheme-cdcf6dac-4afb-4a46-82b6-7040cb4a6ed5": {
+        "settings": {
+          "section_text": "#212121",
+          "section_bg": "#ffd700",
+          "section_bg_light": "#f5f2ec",
+          "section_bg_gradient": "",
+          "btn_primary_bg": "#212121",
+          "btn_primary_text": "#ffffff",
+          "btn_primary_border": "#212121",
+          "btn_secondary_bg": "#ab8c52",
+          "btn_secondary_text": "#ffffff",
+          "btn_secondary_border": "#ab8c52",
+          "accent": "#ab8c52",
+          "lines_and_border": "#d1cdc4",
+          "overlay": "#00000021",
+          "links": "#282c2e"
+        }
+      },
+      "scheme-08226272-bcb7-4bcd-bdcd-78f787cff5e8": {
+        "settings": {
+          "section_text": "#212121",
+          "section_bg": "#14264b",
+          "section_bg_light": "#f5f2ec",
+          "section_bg_gradient": "",
+          "btn_primary_bg": "#212121",
+          "btn_primary_text": "#ffffff",
+          "btn_primary_border": "#212121",
+          "btn_secondary_bg": "#ab8c52",
+          "btn_secondary_text": "#ffffff",
+          "btn_secondary_border": "#ab8c52",
+          "accent": "#ab8c52",
+          "lines_and_border": "#d1cdc4",
+          "overlay": "#00000021",
+          "links": "#282c2e"
+        }
+      },
+      "scheme-b4781d11-336d-4d7c-bfc1-6af4552f71c0": {
+        "settings": {
+          "section_text": "#212121",
+          "section_bg": "#ffd7003f",
+          "section_bg_light": "#14264b7c",
+          "section_bg_gradient": "",
+          "btn_primary_bg": "#212121",
+          "btn_primary_text": "#ffffff",
+          "btn_primary_border": "#212121",
+          "btn_secondary_bg": "#ab8c52",
+          "btn_secondary_text": "#ffffff",
+          "btn_secondary_border": "#ab8c52",
+          "accent": "#ab8c52",
+          "lines_and_border": "#d1cdc4",
+          "overlay": "#00000021",
           "links": "#282c2e"
         }
       }
