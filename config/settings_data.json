@@ -289,9 +289,9 @@
           "btn_secondary_bg": "#14264b",
           "btn_secondary_text": "#ffffff",
           "btn_secondary_border": "#14264b",
-          "accent": "#ffd700",
+          "accent": "#f7f7f7",
           "lines_and_border": "#14264b",
-          "overlay": "#fff8db",
+          "overlay": "#14264b26",
           "links": "#14264b"
         }
       },
