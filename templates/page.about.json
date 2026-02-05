@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main-page": {
@@ -11,8 +20,10 @@
         "text_font_size": "body-medium",
         "align_text": "text-left",
         "width": "wrapper",
+        "color_scheme": "",
         "padding_top": 50,
-        "padding_bottom": 50
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
       }
     },
     "section-double": {
@@ -21,13 +32,18 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading_font_size": "heading-x-large"
+            "title": "Image with text",
+            "heading_font_size": "heading-x-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text_font_size": "body-medium"
+            "text": "<p>Doolittle Stitchery was born out of a love for needlepoint instilled in artist Elizabeth Nagle at a young age. Elizabeth has been hand painting and custom designing needlepoint for over 30 years.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
           }
         }
       },
@@ -42,56 +58,11 @@
         "width": "wrapper--full",
         "height": "sixty-fifty-height-hero",
         "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "padding_top": 0,
-        "padding_bottom": 50
-      }
-    },
-    "section-columns": {
-      "type": "section-columns",
-      "blocks": {
-        "image": {
-          "type": "image",
-          "settings": {
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary hero__btn",
-            "button_style": "btn--solid",
-            "image_aspect_ratio": 1.2
-          }
-        },
-        "image-0": {
-          "type": "image",
-          "settings": {
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary hero__btn",
-            "button_style": "btn--solid",
-            "image_aspect_ratio": 1.2
-          }
-        },
-        "image-1": {
-          "type": "image",
-          "settings": {
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary hero__btn",
-            "button_style": "btn--solid",
-            "image_aspect_ratio": 1.2
-          }
-        }
-      },
-      "block_order": [
-        "image",
-        "image-0",
-        "image-1"
-      ],
-      "settings": {
-        "align_text": "text-center",
-        "width": "wrapper--full-padded",
-        "align_columns": "flex-align-top",
-        "layout_mobile": "slider",
-        "padding_top": 50,
-        "padding_bottom": 50
+        "padding_bottom": 50,
+        "show_placeholder": true
       }
     },
     "section-double-0": {
@@ -100,13 +71,18 @@
         "heading-0": {
           "type": "heading",
           "settings": {
-            "heading_font_size": "heading-x-large"
+            "title": "Image with text",
+            "heading_font_size": "heading-x-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
           }
         },
         "text-0": {
           "type": "text",
           "settings": {
-            "text_font_size": "body-medium"
+            "text": "<p>Elizabeth’s first job, as a teenager, was working as a production painter while living in London, England. Moving back to the US to attend college, she came away with a skill and a passion that has stayed with her ever since. While studying fine art at the San Francisco Art Institute painting canvases paid the rent and later it afforded her the ability to work from home while raising her children. She has been trained by and designed for some of the best in the business, including Dede Ogden, Erica Wilson and the Silver Needle. A recent move to a beautiful town in Southern Vermont, where the mountains loom large, inspired Beth’s first wholesale line, Ski the East and West, canvases. Doolittle Stitchery is dedicated to creating a unique line of needlepoint canvases to inspire stitchers of all ages and abilities. Doolittle Stitchery designs are sold by needlepoint retail shops throughout the U.S.  For ordering, please contact your local needlepoint shop or select a shop from our list under “Retailers”. I hope you enjoy browsing!</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
           }
         }
       },
@@ -115,114 +91,18 @@
         "text-0"
       ],
       "settings": {
+        "image_1": "shopify://shop_images/DS-PORTRAIT-LOGO-NAV.png",
         "image_width": "one-half",
-        "text_alignment": "text-left",
-        "width": "wrapper--full",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
+        "text_alignment": "text-center",
+        "layout": "",
+        "width": "wrapper",
+        "height": "image-height",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "section-announcement": {
-      "type": "section-announcement",
-      "blocks": {
-        "text-1": {
-          "type": "text",
-          "settings": {
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        }
-      },
-      "block_order": [
-        "text-1"
-      ],
-      "settings": {
-        "slider_speed": 7,
-        "marquee_speed": 100,
-        "layout": "marquee",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section-collections-list": {
-      "type": "section-collections-list",
-      "blocks": {
-        "collection": {
-          "type": "collection",
-          "settings": {}
-        },
-        "collection-0": {
-          "type": "collection",
-          "settings": {}
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {}
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "collection",
-        "collection-0",
-        "collection-1",
-        "collection-2"
-      ],
-      "settings": {
-        "title": "",
-        "aspect_ratio": 1.2,
-        "layout": "grid",
-        "padding_top": 50,
-        "padding_bottom": 32
-      }
-    },
-    "section-press-logos": {
-      "type": "section-press-logos",
-      "blocks": {
-        "logo-item-header": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": ""
-          }
-        },
-        "logo-item-header-0": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": ""
-          }
-        },
-        "logo-item-header-1": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": ""
-          }
-        },
-        "logo-item-header-2": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo-item-header",
-        "logo-item-header-0",
-        "logo-item-header-1",
-        "logo-item-header-2"
-      ],
-      "settings": {
-        "enable_heading_slider": false,
-        "logo_opacity": 60,
-        "padding_top": 50,
-        "padding_bottom": 50
+        "padding_bottom": 50,
+        "show_placeholder": true
       }
     },
     "section-divider": {
@@ -230,6 +110,7 @@
       "settings": {
         "show_line": true,
         "width": "wrapper--full-padded",
+        "color_scheme": "",
         "padding_top": 31,
         "padding_bottom": 50
       }
@@ -238,11 +119,7 @@
   "order": [
     "main-page",
     "section-double",
-    "section-columns",
     "section-double-0",
-    "section-announcement",
-    "section-collections-list",
-    "section-press-logos",
     "section-divider"
   ]
 }
