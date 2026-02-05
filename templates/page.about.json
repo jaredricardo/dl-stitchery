@@ -90,6 +90,9 @@
         "heading-0",
         "text-0"
       ],
+      "custom_css": [
+        "img {object-fit:cover;}"
+      ],
       "settings": {
         "image_1": "shopify://shop_images/DS-PORTRAIT-LOGO-NAV.png",
         "image_width": "one-half",
