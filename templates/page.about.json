@@ -32,7 +32,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Image with text",
+            "title": "The Beginning",
             "heading_font_size": "heading-x-large",
             "padding_bottom": 16,
             "heading_tag": "automatic"
@@ -52,15 +52,16 @@
         "text"
       ],
       "settings": {
+        "image_1": "shopify://shop_images/Screenshot_2026-01-21_at_1.25.05_PM.png",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "is-reversed",
-        "width": "wrapper--full",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
+        "width": "wrapper",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-third--mobile",
         "reverse_blocks": false,
         "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
-        "padding_top": 0,
+        "padding_top": 50,
         "padding_bottom": 50,
         "show_placeholder": true
       }
@@ -71,7 +72,7 @@
         "heading-0": {
           "type": "heading",
           "settings": {
-            "title": "Image with text",
+            "title": "our history",
             "heading_font_size": "heading-x-large",
             "padding_bottom": 16,
             "heading_tag": "automatic"
@@ -80,7 +81,7 @@
         "text-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Elizabeth’s first job, as a teenager, was working as a production painter while living in London, England. Moving back to the US to attend college, she came away with a skill and a passion that has stayed with her ever since. While studying fine art at the San Francisco Art Institute painting canvases paid the rent and later it afforded her the ability to work from home while raising her children. She has been trained by and designed for some of the best in the business, including Dede Ogden, Erica Wilson and the Silver Needle. A recent move to a beautiful town in Southern Vermont, where the mountains loom large, inspired Beth’s first wholesale line, Ski the East and West, canvases. Doolittle Stitchery is dedicated to creating a unique line of needlepoint canvases to inspire stitchers of all ages and abilities. Doolittle Stitchery designs are sold by needlepoint retail shops throughout the U.S.  For ordering, please contact your local needlepoint shop or select a shop from our list under “Retailers”. I hope you enjoy browsing!</p>",
+            "text": "<p>Elizabeth’s first job, as a teenager, was working as a production painter while living in London, England. Moving back to the US to attend college, she came away with a skill and a passion that has stayed with her ever since. </p><p>While studying fine art at the San Francisco Art Institute painting canvases paid the rent and later it afforded her the ability to work from home while raising her children. </p><p>She has been trained by and designed for some of the best in the business, including Dede Ogden, Erica Wilson and the Silver Needle. A recent move to a beautiful town in Southern Vermont, where the mountains loom large, inspired Beth’s first wholesale line, Ski the East and West, canvases. </p>",
             "text_font_size": "body-medium",
             "padding_bottom": 16
           }
@@ -96,25 +97,53 @@
       "settings": {
         "image_1": "shopify://shop_images/DS-PORTRAIT-LOGO-NAV.png",
         "image_width": "one-half",
-        "text_alignment": "text-center",
+        "text_alignment": "text-left",
         "layout": "",
         "width": "wrapper",
-        "height": "image-height",
+        "height": "screen-height-one-half",
         "mobile_height": "image-height--mobile",
         "reverse_blocks": false,
         "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "show_placeholder": true
       }
     },
-    "section-divider": {
-      "type": "section-divider",
+    "section_rich_text_ah37Tc": {
+      "type": "section-rich-text",
+      "blocks": {
+        "text_tHyqa4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Doolittle Stitchery is dedicated to creating a unique line of needlepoint canvases to inspire stitchers of all ages and abilities. Doolittle Stitchery designs are sold by needlepoint retail shops throughout the U.S.  For ordering, please contact your local needlepoint shop or select a shop from our list under “Retailers”. I hope you enjoy browsing!</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_acqhcF": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Find a Retailer",
+            "button_url": "shopify://pages/retailers",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "text_tHyqa4",
+        "buttons_acqhcF"
+      ],
+      "name": "Rich text",
       "settings": {
-        "show_line": true,
-        "width": "wrapper--full-padded",
-        "color_scheme": "",
-        "padding_top": 31,
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "scheme-08226272-bcb7-4bcd-bdcd-78f787cff5e8",
+        "overlay_type": "disabled",
+        "padding_top": 50,
         "padding_bottom": 50
       }
     }
@@ -123,6 +152,6 @@
     "main-page",
     "section-double",
     "section-double-0",
-    "section-divider"
+    "section_rich_text_ah37Tc"
   ]
 }
