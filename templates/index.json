@@ -30,7 +30,7 @@
         "rows": 3,
         "width": "wrapper",
         "layout_mobile": "slider",
-        "color_scheme": "",
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "padding_top": 50,
         "padding_bottom": 50,
         "heading_tag": "automatic"
@@ -369,17 +369,10 @@
     "section-double": {
       "type": "section-double",
       "blocks": {
-        "subheading": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Trends & Tradition",
-            "padding_bottom": 6
-          }
-        },
         "heading-2": {
           "type": "heading",
           "settings": {
-            "title": "For Everyday Wear",
+            "title": "Doolittle designs",
             "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "automatic"
@@ -388,7 +381,7 @@
         "text-2": {
           "type": "text",
           "settings": {
-            "text": "<p>From dainty classics that are perfect for daily adornment to chic, to trendsetting pieces designed to complement any occasion – our selection blends exquisite craftsmanship with modern sensibility.</p>",
+            "text": "<p>Doolittle Stitchery needlepoint designs are available for purchase from fine retail needlework shops throughout the country.</p><p>If you wish to purchase our designs please contact a retailer in your area.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 24
           }
@@ -396,6 +389,7 @@
         "image-2": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Sail_Boats_Pillow_-_P125.png",
             "image_width": 80,
             "padding_bottom": 16
           }
@@ -403,24 +397,24 @@
         "buttons": {
           "type": "buttons",
           "settings": {
-            "button_text": "Shop all products",
-            "button_url": "",
+            "button_text": "Find a Retailer",
+            "button_url": "shopify://pages/retailers",
             "button_type": "btn--primary",
             "button_size": "",
-            "button_style": "btn--text",
+            "button_style": "btn--solid",
             "show_arrow": false,
             "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "subheading",
         "heading-2",
         "text-2",
         "image-2",
         "buttons"
       ],
       "settings": {
+        "image_1": "shopify://shop_images/Screenshot_2026-02-05_at_7.59.13_PM.png",
         "image_width": "one-half",
         "text_alignment": "text-center",
         "layout": "",
@@ -428,7 +422,7 @@
         "height": "sixty-fifty-height-hero",
         "mobile_height": "four-fifty-height-hero--mobile",
         "reverse_blocks": true,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "padding_top": 42,
         "padding_bottom": 82,
         "show_placeholder": true

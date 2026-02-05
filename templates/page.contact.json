@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "section-divider": {
@@ -32,14 +41,14 @@
         "formHeading": {
           "type": "formHeading",
           "settings": {
-            "title": "All products in this store are for demo purposes only. No orders can be placed on this store."
+            "title": "Thank you for your interest in Doolittle Stitchery."
           }
         },
         "text": {
           "type": "text",
           "settings": {
             "title": "Full Name",
-            "required": false
+            "required": true
           }
         },
         "email": {
@@ -49,37 +58,32 @@
             "required": true
           }
         },
+        "telephone_qbpBDF": {
+          "type": "telephone",
+          "settings": {
+            "title": "Phone Number",
+            "required": false
+          }
+        },
+        "text_P6cL9R": {
+          "type": "text",
+          "settings": {
+            "title": "Address",
+            "required": false
+          }
+        },
+        "text_YkHei7": {
+          "type": "text",
+          "settings": {
+            "title": "Subject",
+            "required": false
+          }
+        },
         "body": {
           "type": "body",
           "settings": {
             "title": "Message",
             "required": true
-          }
-        },
-        "formHeading-0": {
-          "type": "formHeading",
-          "settings": {
-            "title": "Optional"
-          }
-        },
-        "checkbox": {
-          "type": "checkbox",
-          "settings": {
-            "title": "This is urgent",
-            "required": false
-          }
-        },
-        "select": {
-          "type": "select",
-          "settings": {
-            "title": "Select an option",
-            "required": false,
-            "label-one": "- Pick an option -",
-            "label-two": "Option one",
-            "label-three": "Option two",
-            "label-four": "Option three",
-            "label-five": "Option four",
-            "label-six": "Option five"
           }
         }
       },
@@ -87,10 +91,10 @@
         "formHeading",
         "text",
         "email",
-        "body",
-        "formHeading-0",
-        "checkbox",
-        "select"
+        "telephone_qbpBDF",
+        "text_P6cL9R",
+        "text_YkHei7",
+        "body"
       ],
       "settings": {
         "title": "",
