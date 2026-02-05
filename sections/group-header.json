@@ -17,7 +17,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorum ipsum</p>",
+            "text": "<p>Lorum ipsum announcement 1</p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
@@ -29,7 +29,7 @@
         "text-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorum ipsum 2</p>",
+            "text": "<p>Lorum ipsum announcement 2</p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
