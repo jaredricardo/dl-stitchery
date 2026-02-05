@@ -36,193 +36,62 @@
         "heading_tag": "automatic"
       }
     },
-    "section-slideshow-nested": {
-      "type": "section-slideshow-nested",
+    "section-hero-scrolling": {
+      "type": "section-hero-scrolling",
       "blocks": {
-        "slide-image": {
-          "type": "_slide-image",
+        "scrolling_text-0": {
+          "type": "scrolling_text",
           "settings": {
-            "link": "",
-            "flex_align_desktop": "align--bottom-left-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "text"
-          },
-          "blocks": {
-            "heading": {
-              "type": "heading",
-              "settings": {
-                "text": "Everyday Luxury",
-                "heading_font_size": "heading-large",
-                "heading_tag": "automatic",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            },
-            "text": {
-              "type": "text",
-              "settings": {
-                "text": "Beautiful pieces to pass down for generations",
-                "text_font_size": "body-large",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            },
-            "group-buttons": {
-              "type": "_group-buttons",
-              "name": "Side by side buttons",
-              "settings": {
-                "button_text": "Shop all products",
-                "button_url": "",
-                "button_type": "btn--black",
-                "button_size": "",
-                "button_style": "btn--solid",
-                "show_arrow": false,
-                "button_secondary_text": "Shop sale",
-                "button_secondary_url": "",
-                "button_secondary_type": "btn--white",
-                "button_secondary_size": "",
-                "button_secondary_style": "btn--solid",
-                "show_secondary_arrow": false,
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "heading",
-            "text",
-            "group-buttons"
-          ]
+            "text": "<p>Welcome to Doolittle stitchery</p>",
+            "color": "#fff8db"
+          }
         },
-        "slide-video": {
-          "type": "_slide-video",
-          "name": "Video",
-          "disabled": true,
+        "text-7": {
+          "type": "text",
           "settings": {
-            "link": "",
-            "flex_align_desktop": "align--middle-center-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "opacity"
-          },
-          "blocks": {
-            "heading-0": {
-              "type": "heading",
-              "settings": {
-                "text": "Light That Lives With You",
-                "heading_font_size": "heading-large",
-                "heading_tag": "automatic",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            },
-            "text-0": {
-              "type": "text",
-              "name": "Text",
-              "settings": {
-                "text": "Crafted to glow with meaning, every day",
-                "text_font_size": "body-large",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            },
-            "button": {
-              "type": "button",
-              "settings": {
-                "text": "Shop the Gemstone Collection",
-                "link": "",
-                "type": "btn--white",
-                "size": "",
-                "style": "btn--solid",
-                "show_arrow": false,
-                "full_width": false,
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "heading-0",
-            "text-0",
-            "button"
-          ]
+            "description": "Doolittle Stitchery was born out of a love for needlepoint instilled in artist Elizabeth Nagle at a young age. Elizabeth has been hand painting and custom designing needlepoint for over 30 years.",
+            "text_font_size": "body-large",
+            "color": "#000000"
+          }
         },
-        "slide-image-0": {
-          "type": "_slide-image",
-          "name": "Image",
+        "button-1": {
+          "type": "button",
           "settings": {
+            "link_text": "Shop the collection",
             "link": "",
-            "flex_align_desktop": "align--middle-center-desktop",
-            "flex_align_mobile": "align--middle-center-mobile",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled"
-          },
-          "blocks": {
-            "heading-1": {
-              "type": "heading",
-              "settings": {
-                "text": "Sleek. Sculptural. Striking.",
-                "heading_font_size": "heading-large",
-                "heading_tag": "automatic",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            },
-            "text-1": {
-              "type": "text",
-              "settings": {
-                "text": "A modern statement in form and finish, designed to stand apart.",
-                "text_font_size": "body-large",
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            },
-            "button-0": {
-              "type": "button",
-              "settings": {
-                "text": "Shop all rings",
-                "link": "",
-                "type": "btn--white",
-                "size": "",
-                "style": "btn--solid",
-                "show_arrow": false,
-                "full_width": false,
-                "padding_bottom": 8
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "heading-1",
-            "text-1",
-            "button-0"
-          ]
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
         }
       },
       "block_order": [
-        "slide-image",
-        "slide-video",
-        "slide-image-0"
+        "scrolling_text-0",
+        "text-7",
+        "button-1"
       ],
-      "name": "Slideshow (Nested)",
+      "name": "Image with scrolling text",
       "settings": {
-        "transition": "slide",
-        "show_arrows": true,
-        "autoplay": true,
-        "autoplay_speed": 4,
-        "width": "wrapper--full",
-        "height": "seven-fifty-height-hero",
-        "mobile_height": "screen-height-full--mobile",
-        "color_scheme": "scheme-5",
+        "link": "",
+        "message_spacing": 30,
+        "marquee_speed": 125,
+        "flex_align": "align--bottom-center",
+        "type_font": "bricolage_grotesque_n8",
+        "text_font_size_px": 90,
+        "mobile_text_font_size_px": 75,
+        "type_letter_spacing": 0,
+        "type_font_caps": true,
+        "scrolling_align": "align--middle-center",
+        "direction": "ticker-rtl",
+        "height": "screen-height-two-thirds",
+        "mobile_image": "shopify://shop_images/sewing-tools-flatlay-knolling.jpg",
+        "mobile_height": "screen-height-two-thirds--mobile",
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
+        "overlay_type": "text",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "show_placeholder": true
       }
     },
     "section-columns": {
@@ -495,6 +364,195 @@
         "heading_tag": "automatic"
       }
     },
+    "section-slideshow-nested": {
+      "type": "section-slideshow-nested",
+      "blocks": {
+        "slide-image": {
+          "type": "_slide-image",
+          "settings": {
+            "link": "",
+            "flex_align_desktop": "align--bottom-left-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "text"
+          },
+          "blocks": {
+            "heading": {
+              "type": "heading",
+              "settings": {
+                "text": "Everyday Luxury",
+                "heading_font_size": "heading-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+                "text": "Beautiful pieces to pass down for generations",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "group-buttons": {
+              "type": "_group-buttons",
+              "name": "Side by side buttons",
+              "settings": {
+                "button_text": "Shop all products",
+                "button_url": "",
+                "button_type": "btn--black",
+                "button_size": "",
+                "button_style": "btn--solid",
+                "show_arrow": false,
+                "button_secondary_text": "Shop sale",
+                "button_secondary_url": "",
+                "button_secondary_type": "btn--white",
+                "button_secondary_size": "",
+                "button_secondary_style": "btn--solid",
+                "show_secondary_arrow": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading",
+            "text",
+            "group-buttons"
+          ]
+        },
+        "slide-video": {
+          "type": "_slide-video",
+          "name": "Video",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "opacity"
+          },
+          "blocks": {
+            "heading-0": {
+              "type": "heading",
+              "settings": {
+                "text": "Light That Lives With You",
+                "heading_font_size": "heading-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text-0": {
+              "type": "text",
+              "name": "Text",
+              "settings": {
+                "text": "Crafted to glow with meaning, every day",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "button": {
+              "type": "button",
+              "settings": {
+                "text": "Shop the Gemstone Collection",
+                "link": "",
+                "type": "btn--white",
+                "size": "",
+                "style": "btn--solid",
+                "show_arrow": false,
+                "full_width": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading-0",
+            "text-0",
+            "button"
+          ]
+        },
+        "slide-image-0": {
+          "type": "_slide-image",
+          "name": "Image",
+          "settings": {
+            "link": "",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "disabled"
+          },
+          "blocks": {
+            "heading-1": {
+              "type": "heading",
+              "settings": {
+                "text": "Sleek. Sculptural. Striking.",
+                "heading_font_size": "heading-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text-1": {
+              "type": "text",
+              "settings": {
+                "text": "A modern statement in form and finish, designed to stand apart.",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "button-0": {
+              "type": "button",
+              "settings": {
+                "text": "Shop all rings",
+                "link": "",
+                "type": "btn--white",
+                "size": "",
+                "style": "btn--solid",
+                "show_arrow": false,
+                "full_width": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading-1",
+            "text-1",
+            "button-0"
+          ]
+        }
+      },
+      "block_order": [
+        "slide-image",
+        "slide-video",
+        "slide-image-0"
+      ],
+      "name": "Slideshow (Nested)",
+      "settings": {
+        "transition": "slide",
+        "show_arrows": true,
+        "autoplay": true,
+        "autoplay_speed": 4,
+        "width": "wrapper--full",
+        "height": "seven-fifty-height-hero",
+        "mobile_height": "screen-height-full--mobile",
+        "color_scheme": "scheme-5",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "section-look": {
       "type": "section-look",
       "blocks": {
@@ -589,7 +647,7 @@
         "height": "sixty-fifty-height-hero",
         "mobile_height": "screen-height-one-half--mobile",
         "reverse_blocks": false,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "padding_top": 59,
         "padding_bottom": 0
       }
@@ -811,79 +869,6 @@
         "heading_tag": "automatic"
       }
     },
-    "section-hero-scrolling": {
-      "type": "section-hero-scrolling",
-      "blocks": {
-        "scrolling_text": {
-          "type": "scrolling_text",
-          "settings": {
-            "text": "<p>Wear Every Moment</p>",
-            "color": "#af7b88"
-          }
-        },
-        "scrolling_text-0": {
-          "type": "scrolling_text",
-          "settings": {
-            "text": "<p>Wear Every Moment</p>",
-            "color": "#e0aebb"
-          }
-        },
-        "scrolling_text-1": {
-          "type": "scrolling_text",
-          "settings": {
-            "text": "<p>Wear Every Moment</p>",
-            "color": "#ffd9e4"
-          }
-        },
-        "text-7": {
-          "type": "text",
-          "settings": {
-            "description": "Celebrate the everyday and the extraordinary with pieces designed to move with you. Ethically crafted, effortlessly timeless—jewelry for every chapter of your story.",
-            "text_font_size": "body-large",
-            "color": ""
-          }
-        },
-        "button-1": {
-          "type": "button",
-          "settings": {
-            "link_text": "Shop the collection",
-            "link": "",
-            "button_type": "btn--white",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false
-          }
-        }
-      },
-      "block_order": [
-        "scrolling_text",
-        "scrolling_text-0",
-        "scrolling_text-1",
-        "text-7",
-        "button-1"
-      ],
-      "name": "Image with scrolling text",
-      "settings": {
-        "link": "",
-        "message_spacing": 30,
-        "marquee_speed": 150,
-        "flex_align": "align--bottom-center",
-        "type_font": "bricolage_grotesque_n8",
-        "text_font_size_px": 90,
-        "mobile_text_font_size_px": 16,
-        "type_letter_spacing": 0,
-        "type_font_caps": true,
-        "scrolling_align": "align--middle-center",
-        "direction": "ticker-rtl",
-        "height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "color_scheme": "scheme-2",
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": true
-      }
-    },
     "176897526404e90a93": {
       "type": "_blocks",
       "settings": {}
@@ -891,18 +876,18 @@
   },
   "order": [
     "section_collection_QtyDpd",
-    "section-slideshow-nested",
+    "section-hero-scrolling",
     "section-columns",
     "section-double",
     "section-custom-content",
     "section-tab-collections",
+    "section-slideshow-nested",
     "section-look",
     "section-custom-content-0",
     "section-product",
     "section-rich-text",
     "section-columns-0",
     "section-text-row",
-    "section-hero-scrolling",
     "176897526404e90a93"
   ]
 }

@@ -291,7 +291,7 @@
           "btn_secondary_border": "#14264b",
           "accent": "#ffd700",
           "lines_and_border": "#14264b",
-          "overlay": "#14264b7d",
+          "overlay": "#fff8db",
           "links": "#14264b"
         }
       },
