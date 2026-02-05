@@ -225,62 +225,6 @@
         "padding_bottom": 0
       }
     },
-    "section-text-with-products": {
-      "type": "section-text-with-products",
-      "blocks": {
-        "collection": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_position": 1,
-            "aspect_ratio": 0.6,
-            "width": 120,
-            "mobile_aspect_ratio": 0.6,
-            "mobile_width": 80
-          }
-        },
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_position": 2,
-            "aspect_ratio": 0.6,
-            "width": 120,
-            "mobile_aspect_ratio": 0.6,
-            "mobile_width": 80
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_position": 7,
-            "aspect_ratio": 0.5,
-            "width": 120,
-            "mobile_aspect_ratio": 0.6,
-            "mobile_width": 60
-          }
-        }
-      },
-      "block_order": [
-        "collection",
-        "collection-0",
-        "collection-1"
-      ],
-      "settings": {
-        "subheading": "bestselling fine jewelry",
-        "heading": "Modern heirlooms elegant treasures",
-        "image_border_radius": 20,
-        "width": "wrapper--full-padded",
-        "text_font_size_px_desktop": 32,
-        "text_align_desktop": "text-center",
-        "text_font_size_px_mobile": 26,
-        "text_align_mobile": "text-left--mobile",
-        "color_scheme": "",
-        "padding_top": 60,
-        "padding_bottom": 40
-      }
-    },
     "section-columns": {
       "type": "section-columns",
       "blocks": {
@@ -361,7 +305,7 @@
         "grid": 3,
         "layout_mobile": "1",
         "color_scheme": "",
-        "padding_top": 0,
+        "padding_top": 62,
         "padding_bottom": 62,
         "heading_tag": "automatic"
       }
@@ -428,80 +372,45 @@
         "show_placeholder": true
       }
     },
-    "section-announcement": {
-      "type": "section-announcement",
+    "section-custom-content": {
+      "type": "section-custom-content",
       "blocks": {
-        "text-3": {
-          "type": "text",
+        "image-3": {
+          "type": "image",
           "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "heading-3": {
-          "type": "heading",
-          "settings": {
-            "heading": "Timeless pieces to treasure forever",
-            "heading_font_size": "heading-x-small"
-          }
-        },
-        "text-4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "heading-4": {
-          "type": "heading",
-          "settings": {
-            "heading": "Ethical sourcing and manufacturing",
-            "heading_font_size": "heading-x-small"
-          }
-        },
-        "text-5": {
-          "type": "text",
-          "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "heading-5": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sustainable heirlooms",
-            "heading_font_size": "heading-x-small"
+            "image": "shopify://shop_images/brown-boxes-tied-up-in-a-bow.jpg",
+            "title": "Wholesale",
+            "heading_font_size": "heading-medium",
+            "text": "<p>If you are a retailer interested in carrying our designs </p><p>please contact us!</p>",
+            "text_font_size": "body-medium",
+            "flex_align": "align--bottom-left",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#000000",
+            "overlay_type": "disabled",
+            "link_text": "Contact Us",
+            "link": "shopify://pages/contact",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
           }
         }
       },
       "block_order": [
-        "text-3",
-        "heading-3",
-        "text-4",
-        "heading-4",
-        "text-5",
-        "heading-5"
+        "image-3"
       ],
       "settings": {
-        "slider_speed": 7,
-        "text_alignment": "center",
-        "marquee_speed": 100,
-        "direction": "ticker-rtl",
-        "message_spacing": 10,
-        "show_border": false,
-        "layout": "marquee",
-        "color_scheme": "scheme-2",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "borders": false,
+        "gutters": true,
+        "width": "wrapper--full-padded",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section-tab-collections": {
@@ -584,266 +493,6 @@
         "padding_top": 62,
         "padding_bottom": 62,
         "heading_tag": "automatic"
-      }
-    },
-    "section-video": {
-      "type": "section-video",
-      "name": "Video",
-      "settings": {
-        "show_video_popup": false,
-        "video_popup_social": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "title": "Behind the Brilliance",
-        "heading_font_size": "heading-large",
-        "text": "<p>Watch how our jewelry comes to life, from ethical sourcing to enduring design.</p>",
-        "text_font_size": "body-medium",
-        "flex_align": "align--middle-center",
-        "link_text": "learn more",
-        "link": "",
-        "button_type": "btn--white",
-        "button_size": "",
-        "button_style": "btn--outline",
-        "show_arrow": false,
-        "desktop_height": "screen-height-three-quarters",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "width": "wrapper--full",
-        "color_scheme": "scheme-2",
-        "show_text_background": false,
-        "color": "",
-        "overlay_type": "disabled",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "heading_tag": "automatic"
-      }
-    },
-    "section-press-logos": {
-      "type": "section-press-logos",
-      "blocks": {
-        "logo-item-text": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Sustainable luxury at its most refined",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo-item-text-0": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Jewelry that’s as ethical as it is exquisite",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo-item-text-1": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "The future of fine jewelry is here—and it’s conscious.",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo-item-text-2": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Each piece feels like a modern heirloom",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo-item-text-3": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Minimal, meaningful, and made to last",
-            "text_font_size": "body-x-large"
-          }
-        },
-        "logo-item-text-4": {
-          "type": "logo-item-text",
-          "settings": {
-            "logo_width": 100,
-            "link": "",
-            "text": "Where craftsmanship meets a conscience",
-            "text_font_size": "body-x-large"
-          }
-        }
-      },
-      "block_order": [
-        "logo-item-text",
-        "logo-item-text-0",
-        "logo-item-text-1",
-        "logo-item-text-2",
-        "logo-item-text-3",
-        "logo-item-text-4"
-      ],
-      "settings": {
-        "enable_heading_slider": true,
-        "logo_opacity": 60,
-        "title": "As seen in",
-        "color_scheme": "",
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
-    "section-custom-content": {
-      "type": "section-custom-content",
-      "blocks": {
-        "image-3": {
-          "type": "image",
-          "settings": {
-            "title": "Geometry of Light",
-            "heading_font_size": "heading-medium",
-            "text": "<p>Brilliantly cut and artfully arranged to capture light with effortless elegance.</p>",
-            "text_font_size": "body-medium",
-            "flex_align": "align--bottom-left",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled",
-            "link_text": "Shop now",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        },
-        "image-4": {
-          "type": "image",
-          "settings": {
-            "title": "Modern and Timeless",
-            "heading_font_size": "heading-medium",
-            "text": "<p>Accessorize with 14k recycled gold all day, everyday.</p>",
-            "text_font_size": "body-medium",
-            "flex_align": "align--bottom-left",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#ffffff",
-            "overlay_type": "disabled",
-            "link_text": "Shop now",
-            "link": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image-3",
-        "image-4"
-      ],
-      "settings": {
-        "borders": false,
-        "gutters": true,
-        "width": "wrapper--full-padded",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "scheme-6",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section-collections-list-hover": {
-      "type": "section-collections-list-hover",
-      "blocks": {
-        "collection-5": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "collection-6": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "collection-7": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "collection-8": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "collection-9": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-5",
-        "collection-6",
-        "collection-7",
-        "collection-8",
-        "collection-9"
-      ],
-      "settings": {
-        "heading_font_size": "heading-x-large",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "screen-height-three-quarters--mobile",
-        "color_scheme": "scheme-10",
-        "overlay_type": "disabled",
-        "padding_top": 100,
-        "padding_bottom": 0
-      }
-    },
-    "section-announcement-0": {
-      "type": "section-announcement",
-      "blocks": {
-        "text-6": {
-          "type": "text",
-          "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-small",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "desktop"
-          }
-        },
-        "heading-6": {
-          "type": "heading",
-          "settings": {
-            "heading": "Express yourself in your own way",
-            "heading_font_size": "heading-x-small"
-          }
-        }
-      },
-      "block_order": [
-        "text-6",
-        "heading-6"
-      ],
-      "settings": {
-        "slider_speed": 7,
-        "text_alignment": "center",
-        "marquee_speed": 100,
-        "direction": "ticker-ltr",
-        "message_spacing": 10,
-        "show_border": false,
-        "layout": "marquee",
-        "color_scheme": "scheme-2",
-        "padding_top": 20,
-        "padding_bottom": 20
       }
     },
     "section-look": {
@@ -1243,16 +892,10 @@
   "order": [
     "section_collection_QtyDpd",
     "section-slideshow-nested",
-    "section-text-with-products",
     "section-columns",
     "section-double",
-    "section-announcement",
-    "section-tab-collections",
-    "section-video",
-    "section-press-logos",
     "section-custom-content",
-    "section-collections-list-hover",
-    "section-announcement-0",
+    "section-tab-collections",
     "section-look",
     "section-custom-content-0",
     "section-product",

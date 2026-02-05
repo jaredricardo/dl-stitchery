@@ -29,7 +29,7 @@
         "text_font_size": "body-medium",
         "align_text": "text-center",
         "width": "wrapper",
-        "color_scheme": "",
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "padding_top": 50,
         "padding_bottom": 50,
         "heading_tag": "automatic"
@@ -101,7 +101,7 @@
         "heading_font_size": "heading-large",
         "terms": true,
         "width": "wrapper--narrow",
-        "color_scheme": "",
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "padding_top": 50,
         "padding_bottom": 50,
         "heading_tag": "automatic"
