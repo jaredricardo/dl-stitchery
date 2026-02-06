@@ -192,32 +192,6 @@
     "176897526404e90a93": {
       "type": "_blocks",
       "settings": {}
-    },
-    "blocks_LpTf4i": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_a4c1737_AbtV3T": {
-          "type": "ai_gen_block_a4c1737",
-          "settings": {
-            "image": "shopify://shop_images/DS-PORTRAIT-LOGO-WHT.png",
-            "image_width": 100,
-            "image_border_radius": 0,
-            "desktop_height_type": "pixels",
-            "desktop_max_height_px": 600,
-            "mobile_height_type": "viewport_half",
-            "mobile_max_height_px": 400,
-            "section_background_color": "#14264b",
-            "section_padding": 40,
-            "desktop_width_percent": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_a4c1737_AbtV3T"
-      ],
-      "name": "Simple image",
-      "settings": {}
     }
   },
   "order": [
@@ -226,7 +200,6 @@
     "section-double",
     "section-product",
     "section-custom-content",
-    "176897526404e90a93",
-    "blocks_LpTf4i"
+    "176897526404e90a93"
   ]
 }
