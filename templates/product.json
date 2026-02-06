@@ -392,7 +392,7 @@
         "icon_name": "icon-award",
         "icon_size": 20,
         "width": "wrapper",
-        "color_scheme": "",
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "icon_color": "",
         "padding_top": 80,
         "padding_bottom": 0
@@ -454,7 +454,7 @@
         "icon_name": "icon-award",
         "icon_size": 20,
         "width": "wrapper",
-        "color_scheme": "",
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "icon_color": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -504,7 +504,7 @@
         "icon_name": "icon-award",
         "icon_size": 20,
         "width": "wrapper",
-        "color_scheme": "",
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "icon_color": "",
         "padding_top": 0,
         "padding_bottom": 80
@@ -644,7 +644,7 @@
         "grid": 4,
         "rows": 3,
         "layout_mobile": "slider",
-        "color_scheme": "",
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "padding_top": 60,
         "padding_bottom": 60
       }
