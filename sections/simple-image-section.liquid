@@ -1,0 +1,182 @@
+{{ 'simple-image-section.css' | asset_url | stylesheet_tag }}
+
+<div class="simple-image-section" 
+     data-section-id="{{ section.id }}"
+     style="background-color: {{ section.settings.background_color }};"
+     data-desktop-height="{{ section.settings.desktop_height }}"
+     data-mobile-height="{{ section.settings.mobile_height }}">
+  <div class="simple-image-section__container">
+    {% if section.settings.image != blank %}
+      <img 
+        src="{{ section.settings.image | image_url: width: 2000 }}"
+        srcset="{{ section.settings.image | image_url: width: 500 }} 500w,
+                {{ section.settings.image | image_url: width: 800 }} 800w,
+                {{ section.settings.image | image_url: width: 1200 }} 1200w,
+                {{ section.settings.image | image_url: width: 1600 }} 1600w,
+                {{ section.settings.image | image_url: width: 2000 }} 2000w"
+        sizes="(max-width: 767px) 100vw, 80vw"
+        alt="{{ section.settings.image.alt | escape }}"
+        loading="lazy"
+        class="simple-image-section__image">
+    {% else %}
+      <div class="simple-image-section__placeholder">
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  [data-section-id="{{ section.id }}"].simple-image-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Desktop heights */
+  @media screen and (min-width: 768px) {
+    [data-section-id="{{ section.id }}"].simple-image-section[data-desktop-height="33"] {
+      height: 33.333vh;
+    }
+    
+    [data-section-id="{{ section.id }}"].simple-image-section[data-desktop-height="50"] {
+      height: 50vh;
+    }
+    
+    [data-section-id="{{ section.id }}"].simple-image-section[data-desktop-height="66"] {
+      height: 66.666vh;
+    }
+    
+    [data-section-id="{{ section.id }}"].simple-image-section[data-desktop-height="100"] {
+      height: 100vh;
+    }
+  }
+
+  /* Mobile heights */
+  @media screen and (max-width: 767px) {
+    [data-section-id="{{ section.id }}"].simple-image-section[data-mobile-height="33"] {
+      height: 33.333vh;
+    }
+    
+    [data-section-id="{{ section.id }}"].simple-image-section[data-mobile-height="50"] {
+      height: 50vh;
+    }
+    
+    [data-section-id="{{ section.id }}"].simple-image-section[data-mobile-height="66"] {
+      height: 66.666vh;
+    }
+    
+    [data-section-id="{{ section.id }}"].simple-image-section[data-mobile-height="100"] {
+      height: 100vh;
+    }
+  }
+
+  [data-section-id="{{ section.id }}"] .simple-image-section__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  [data-section-id="{{ section.id }}"] .simple-image-section__image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  [data-section-id="{{ section.id }}"] .simple-image-section__placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  [data-section-id="{{ section.id }}"] .simple-image-section__placeholder svg {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Simple Image Section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "desktop_height",
+      "label": "Desktop Height",
+      "options": [
+        {
+          "value": "33",
+          "label": "1/3 viewport height"
+        },
+        {
+          "value": "50",
+          "label": "1/2 viewport height"
+        },
+        {
+          "value": "66",
+          "label": "2/3 viewport height"
+        },
+        {
+          "value": "100",
+          "label": "Full viewport height"
+        }
+      ],
+      "default": "50"
+    },
+    {
+      "type": "select",
+      "id": "mobile_height",
+      "label": "Mobile Height",
+      "options": [
+        {
+          "value": "33",
+          "label": "1/3 viewport height"
+        },
+        {
+          "value": "50",
+          "label": "1/2 viewport height"
+        },
+        {
+          "value": "66",
+          "label": "2/3 viewport height"
+        },
+        {
+          "value": "100",
+          "label": "Full viewport height"
+        }
+      ],
+      "default": "50"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Simple Image Section"
+    }
+  ]
+}
+{% endschema %}
