@@ -10,34 +10,6 @@
 {
   "type": "custom.pre_footer",
   "name": "Pre-footer",
-  "sections": {
-    "17703110437f9a8e3e": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_a4c1737_fBak6y": {
-          "type": "ai_gen_block_a4c1737",
-          "settings": {
-            "image": "shopify://shop_images/DS-PORTRAIT-LOGO-WHT.png",
-            "image_width": 40,
-            "image_border_radius": 0,
-            "desktop_height_type": "viewport_third",
-            "desktop_max_height_px": 1000,
-            "mobile_height_type": "auto",
-            "mobile_max_height_px": 400,
-            "section_background_color": "#14264b",
-            "section_padding": 40,
-            "desktop_width_percent": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_a4c1737_fBak6y"
-      ],
-      "settings": {}
-    }
-  },
-  "order": [
-    "17703110437f9a8e3e"
-  ]
+  "sections": {},
+  "order": []
 }
