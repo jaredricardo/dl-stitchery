@@ -60,26 +60,6 @@
     },
     "header": {
       "type": "header",
-      "blocks": {
-        "image-0": {
-          "type": "image",
-          "settings": {
-            "position": "1",
-            "aspect_ratio": 1,
-            "wide_image": false,
-            "overlay_type": "text",
-            "title": "Shop Gemstone Collection",
-            "heading_font_size": "heading-mini",
-            "link_text": "",
-            "text_font_size": "body-medium",
-            "link": "",
-            "text_color": "#fcfbf9"
-          }
-        }
-      },
-      "block_order": [
-        "image-0"
-      ],
       "settings": {
         "header_sticky": false,
         "enable_search": true,
