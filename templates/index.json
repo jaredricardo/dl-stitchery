@@ -145,6 +145,33 @@
         "heading_tag": "automatic"
       }
     },
+    "section_collection_jjzwEz": {
+      "type": "section-collection",
+      "name": "Featured collection",
+      "settings": {
+        "featured_collection": "all",
+        "heading": "Recently Restocked",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "Shop Now",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "btn--large",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 3,
+        "width": "wrapper",
+        "layout_mobile": "slider",
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
     "section-custom-content": {
       "type": "section-custom-content",
       "blocks": {
@@ -194,6 +221,7 @@
   "order": [
     "section-hero-scrolling",
     "section-double",
+    "section_collection_jjzwEz",
     "simple_image_section_ckyMV7",
     "section_collection_QtyDpd",
     "section-custom-content",
