@@ -232,6 +232,33 @@
                     </div>
                   </div>
 
+                {%- when 'image' -%}
+                  <div class="footer__block footer__block--image" style="{{ block_style }}" {{ block.shopify_attributes }}>
+                    {%- if block.settings.image != blank -%}
+                      {%- liquid
+                        assign image_width = block.settings.image_width
+                        assign image_width_x15 = image_width | times: 1.5
+                        assign image_width_x2 = image_width | times: 2
+                        assign sizes = image_width | append: 'px'
+                        assign widths = image_width | append: ', ' | append: image_width_x15 | append: ', ' | append: image_width_x2
+                        assign image_link = block.settings.image_link
+                      -%}
+                      <div class="footer__block__image" style="width: {{ image_width }}px;">
+                        {%- if image_link != blank -%}
+                          <a href="{{ image_link }}">
+                            {%- render 'image' image: block.settings.image, width: image_width_x2, sizes: sizes, widths: widths -%}
+                          </a>
+                        {%- else -%}
+                          {%- render 'image' image: block.settings.image, width: image_width_x2, sizes: sizes, widths: widths -%}
+                        {%- endif -%}
+                      </div>
+                    {%- else -%}
+                      <div class="footer__block__image-placeholder">
+                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                      </div>
+                    {%- endif -%}
+                  </div>
+
                 {%- when 'divider' -%}
                   <div class="footer__block footer__block--divider{{ inline_blocks_placeholder }}" style="{{ block_style }}">
                     {%- render 'divider' block: block -%}
@@ -736,6 +763,45 @@
           "unit": "px",
           "label": "Bottom",
           "default": 20
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1400 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "label": "Image width (in pixels)",
+          "min": 50,
+          "max": 400,
+          "step": 5,
+          "unit": "px",
+          "default": 150
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "Image link",
+          "info": "Optional link when image is clicked"
+        },
+        {
+          "type": "range",
+          "id": "column_width",
+          "label": "Column width",
+          "unit": "%",
+          "min": 1,
+          "max": 100,
+          "step": 1,
+          "default": 33,
+          "info": "Desktop only"
         }
       ]
     }

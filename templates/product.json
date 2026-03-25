@@ -136,7 +136,7 @@
           "type": "buttons",
           "settings": {
             "show_quantity": true,
-            "button_type": "btn--black",
+            "button_type": "btn--primary",
             "button_size": "btn--large",
             "button_style": "btn--solid",
             "show_dynamic_checkout": false,
@@ -279,7 +279,7 @@
         "image_layout": "stacked",
         "image_size": "normal",
         "mobile_image_style": "slider",
-        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
+        "color_scheme": "scheme-53b0d1bd-154b-4f31-b551-ed748bd58e9b",
         "padding_top": 40,
         "padding_bottom": 80
       }

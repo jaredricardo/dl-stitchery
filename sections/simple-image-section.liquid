@@ -4,23 +4,35 @@
      data-section-id="{{ section.id }}"
      style="background-color: {{ section.settings.background_color }};"
      data-desktop-height="{{ section.settings.desktop_height }}"
-     data-mobile-height="{{ section.settings.mobile_height }}">
-  <div class="simple-image-section__container">
-    {% if section.settings.image != blank %}
-      <img 
-        src="{{ section.settings.image | image_url: width: 2000 }}"
-        srcset="{{ section.settings.image | image_url: width: 500 }} 500w,
-                {{ section.settings.image | image_url: width: 800 }} 800w,
-                {{ section.settings.image | image_url: width: 1200 }} 1200w,
-                {{ section.settings.image | image_url: width: 1600 }} 1600w,
-                {{ section.settings.image | image_url: width: 2000 }} 2000w"
-        sizes="(max-width: 767px) 100vw, 80vw"
-        alt="{{ section.settings.image.alt | escape }}"
-        loading="lazy"
-        class="simple-image-section__image">
-    {% else %}
-      <div class="simple-image-section__placeholder">
-        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+     data-mobile-height="{{ section.settings.mobile_height }}"
+     data-desktop-position="{{ section.settings.image_position_desktop }}"
+     data-mobile-position="{{ section.settings.image_position_mobile }}"
+     data-has-text="{% if section.settings.rich_text != blank %}true{% else %}false{% endif %}">
+  
+  <div class="simple-image-section__content">
+    <div class="simple-image-section__image-wrapper">
+      {% if section.settings.image != blank %}
+        <img 
+          src="{{ section.settings.image | image_url: width: 2000 }}"
+          srcset="{{ section.settings.image | image_url: width: 500 }} 500w,
+                  {{ section.settings.image | image_url: width: 800 }} 800w,
+                  {{ section.settings.image | image_url: width: 1200 }} 1200w,
+                  {{ section.settings.image | image_url: width: 1600 }} 1600w,
+                  {{ section.settings.image | image_url: width: 2000 }} 2000w"
+          sizes="(max-width: 767px) 100vw, 50vw"
+          alt="{{ section.settings.image.alt | escape }}"
+          loading="lazy"
+          class="simple-image-section__image">
+      {% else %}
+        <div class="simple-image-section__placeholder">
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if section.settings.rich_text != blank %}
+      <div class="simple-image-section__text" style="color: {{ section.settings.text_color }};">
+        {{ section.settings.rich_text }}
       </div>
     {% endif %}
   </div>
@@ -74,13 +86,70 @@
     }
   }
 
-  [data-section-id="{{ section.id }}"] .simple-image-section__container {
+  [data-section-id="{{ section.id }}"] .simple-image-section__content {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 40px;
     padding: 20px;
+  }
+
+  /* Desktop positioning */
+  @media screen and (min-width: 768px) {
+    /* Image on left, text on right */
+    [data-section-id="{{ section.id }}"][data-desktop-position="left"] .simple-image-section__content {
+      flex-direction: row;
+    }
+    
+    /* Image on right, text on left */
+    [data-section-id="{{ section.id }}"][data-desktop-position="right"] .simple-image-section__content {
+      flex-direction: row-reverse;
+    }
+
+    /* When text exists, both take 50% width */
+    [data-section-id="{{ section.id }}"][data-has-text="true"] .simple-image-section__image-wrapper,
+    [data-section-id="{{ section.id }}"][data-has-text="true"] .simple-image-section__text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* When no text, image takes full width */
+    [data-section-id="{{ section.id }}"][data-has-text="false"] .simple-image-section__image-wrapper {
+      flex: 1;
+      width: 100%;
+    }
+  }
+
+  /* Mobile positioning */
+  @media screen and (max-width: 767px) {
+    [data-section-id="{{ section.id }}"] .simple-image-section__content {
+      gap: 20px;
+    }
+
+    /* Image on top, text on bottom */
+    [data-section-id="{{ section.id }}"][data-mobile-position="top"] .simple-image-section__content {
+      flex-direction: column;
+    }
+    
+    /* Image on bottom, text on top */
+    [data-section-id="{{ section.id }}"][data-mobile-position="bottom"] .simple-image-section__content {
+      flex-direction: column-reverse;
+    }
+
+    /* On mobile, each takes full width */
+    [data-section-id="{{ section.id }}"] .simple-image-section__image-wrapper,
+    [data-section-id="{{ section.id }}"] .simple-image-section__text {
+      flex: 1;
+      width: 100%;
+    }
+  }
+
+  [data-section-id="{{ section.id }}"] .simple-image-section__image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 
   [data-section-id="{{ section.id }}"] .simple-image-section__image {
@@ -107,6 +176,16 @@
     height: 100%;
     opacity: 0.3;
   }
+
+  [data-section-id="{{ section.id }}"] .simple-image-section__text {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  [data-section-id="{{ section.id }}"] .simple-image-section__text > * {
+    width: 100%;
+  }
 </style>
 
 {% schema %}
@@ -123,6 +202,52 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image"
+    },
+    {
+      "type": "richtext",
+      "id": "rich_text",
+      "label": "Rich Text",
+      "info": "Optional text content to display alongside the image"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "image_position_desktop",
+      "label": "Image Position (Desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left",
+      "info": "Position of the image on desktop when text is present"
+    },
+    {
+      "type": "select",
+      "id": "image_position_mobile",
+      "label": "Image Position (Mobile)",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "top",
+      "info": "Position of the image on mobile when text is present"
     },
     {
       "type": "select",

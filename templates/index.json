@@ -102,18 +102,49 @@
         "height": "sixty-fifty-height-hero",
         "mobile_height": "four-fifty-height-hero--mobile",
         "reverse_blocks": true,
-        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
+        "color_scheme": "scheme-53b0d1bd-154b-4f31-b551-ed748bd58e9b",
         "padding_top": 50,
         "padding_bottom": 50,
         "show_placeholder": true
+      }
+    },
+    "section_collection_jjzwEz": {
+      "type": "section-collection",
+      "name": "Featured collection",
+      "settings": {
+        "featured_collection": "all",
+        "heading": "Recently Restocked",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "Shop Now",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "btn--large",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 4,
+        "rows": 3,
+        "width": "wrapper",
+        "layout_mobile": "slider",
+        "color_scheme": "scheme-53b0d1bd-154b-4f31-b551-ed748bd58e9b",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
       }
     },
     "simple_image_section_ckyMV7": {
       "type": "simple-image-section",
       "name": "Simple Image Section",
       "settings": {
-        "background_color": "#14264b",
+        "background_color": "#4761a6",
         "image": "shopify://shop_images/DS-PORTRAIT-LOGO-WHT.png",
+        "rich_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis pharetra vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In ultrices cursus erat non aliquet. Ut non purus nec ex blandit dignissim in ut felis. Sed sed mattis libero, ut dignissim dolor. Aliquam erat volutpat. Nunc accumsan lorem in cursus ornare.</p>",
+        "text_color": "#ffffff",
+        "image_position_desktop": "left",
+        "image_position_mobile": "top",
         "desktop_height": "50",
         "mobile_height": "50"
       }
@@ -139,34 +170,7 @@
         "rows": 3,
         "width": "wrapper",
         "layout_mobile": "slider",
-        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "heading_tag": "automatic"
-      }
-    },
-    "section_collection_jjzwEz": {
-      "type": "section-collection",
-      "name": "Featured collection",
-      "settings": {
-        "featured_collection": "all",
-        "heading": "Recently Restocked",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "layout": "inline",
-        "link_text": "Shop Now",
-        "link_url": "",
-        "button_type": "btn--primary",
-        "button_size": "btn--large",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "layout_desktop": "grid",
-        "grid": 4,
-        "rows": 3,
-        "width": "wrapper",
-        "layout_mobile": "slider",
-        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
+        "color_scheme": "scheme-53b0d1bd-154b-4f31-b551-ed748bd58e9b",
         "padding_top": 50,
         "padding_bottom": 50,
         "heading_tag": "automatic"
@@ -208,7 +212,7 @@
         "height": "sixty-fifty-height-hero",
         "mobile_height": "four-fifty-height-hero--mobile",
         "reverse_blocks": false,
-        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
+        "color_scheme": "scheme-53b0d1bd-154b-4f31-b551-ed748bd58e9b",
         "padding_top": 50,
         "padding_bottom": 50
       }

@@ -52,7 +52,7 @@
         "marquee_speed": 100,
         "message_spacing": 10,
         "text_font_size": "body-small",
-        "color_scheme": "scheme-cdcf6dac-4afb-4a46-82b6-7040cb4a6ed5",
+        "color_scheme": "scheme-08226272-bcb7-4bcd-bdcd-78f787cff5e8",
         "border_color": "rgba(0,0,0,0)",
         "padding_top": 5,
         "padding_bottom": 5
@@ -70,7 +70,7 @@
         "show_icons": true,
         "icon_as_circle": false,
         "cart_icon_family": "bag",
-        "logo": "shopify://shop_images/DS-MAIN-LOGO-NAV.png",
+        "logo": "shopify://shop_images/WORDMARK_NAVY_cropped.png",
         "logo_max_limit": 230,
         "logo_max_limit_mobile": 120,
         "main_menu_linklist": "main-menu",
@@ -93,8 +93,8 @@
         "transparent_article": false,
         "transparent_page": false,
         "transparent_product_page": false,
-        "padding_top": 15,
-        "padding_bottom": 15
+        "padding_top": 25,
+        "padding_bottom": 25
       }
     },
     "mobile-menu": {

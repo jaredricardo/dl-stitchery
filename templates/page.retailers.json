@@ -21,6 +21,7 @@
     },
     "main-page": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "show_title": true,
@@ -52,9 +53,9 @@
             "content_text_size": 16,
             "max_width": 1000,
             "border_radius": 8,
-            "background_color": "#ffffff",
-            "content_bg_color": "#ffffff",
-            "dropdown_bg_color": "#ffffff",
+            "background_color": "#fdfdfd",
+            "content_bg_color": "#fcf5d1",
+            "dropdown_bg_color": "#fcf5d1",
             "text_color": "#212121",
             "border_color": "#d1cdc4",
             "accent_color": "#14264b",
@@ -215,7 +216,6 @@
       "block_order": [
         "ai_gen_block_fc743cd_c6nBLH"
       ],
-      "disabled": true,
       "settings": {}
     }
   },
