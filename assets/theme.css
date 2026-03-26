@@ -19751,7 +19751,7 @@ body.is-focused .subcollection__item:focus-within .image-overlay-bottom {
 }
 @media only screen and (min-width: 990px) {
   .footer__block {
-    flex: 0 0 var(--desktop-width);
+    flex: 1;
   }
 }
 @media only screen and (min-width: 750px) and (max-width: 989px) {

@@ -7,9 +7,7 @@
   assign inline_blocks_placeholder = '####inline-blocks@@@@'
   assign color_scheme = 'color-' | append: section.settings.color_scheme
   assign border_color = section.settings.border_color
-  assign one_third_block_count = 0
   assign blocks_code = ''
-  assign blocks_width = 0
 -%}
 
 {%- style -%}
@@ -71,15 +69,6 @@
                 assign text = block.settings.text
                 assign show_social_links = block.settings.show_social_links
                 assign enable_accordion = block.settings.enable_accordion
-                assign column_width = block.settings.column_width
-                assign blocks_width = blocks_width | plus: block.settings.column_width
-                if block.settings.column_width == 33
-                  assign one_third_block_count = one_third_block_count | plus: 1
-                endif
-
-                capture block_style
-                  echo '--desktop-width: ' | append: column_width | append: '%;'
-                endcapture
 
                 if block_type == 'linklist' or block_type == 'social' or block_type == 'text'
                   if block_type == 'linklist'
@@ -97,7 +86,7 @@
 
               {%- case block_type -%}
                 {%- when 'linklist' -%}
-                  <details class="footer__block footer__block--menu{% if enable_accordion %} accordion{% endif %}" style="{{ block_style }}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
+                  <details class="footer__block footer__block--menu{% if enable_accordion %} accordion{% endif %}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
                     <summary class="{% if title != blank %}h3 footer__block__title {{ block.settings.heading_font_size }}{% if enable_accordion %} accordion__title{% endif %}{% else %}hidden{% endif %}" data-collapsible-trigger>
                       {%- if title != blank -%}
                         {{ title | escape }}
@@ -123,7 +112,7 @@
                   {%- assign page = pages[block.settings.page] -%}
 
                   {%- if page == blank or page.empty? -%}
-                    <details class="footer__block footer__block--page{% if enable_accordion %} accordion{% endif %}" style="{{ block_style }}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
+                    <details class="footer__block footer__block--page{% if enable_accordion %} accordion{% endif %}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
                       <summary class="h3 footer__block__title {{ block.settings.heading_font_size }}{% if enable_accordion %} accordion__title{% endif %}" data-collapsible-trigger>
                         {%- if title != blank -%}
                           {{ title }}
@@ -139,7 +128,7 @@
                       </div>
                     </details>
                   {%- else -%}
-                    <details class="footer__block footer__block--page{% if enable_accordion %} accordion{% endif %}" style="{{ block_style }}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
+                    <details class="footer__block footer__block--page{% if enable_accordion %} accordion{% endif %}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
                       <summary class="h3 footer__block__title {{ block.settings.heading_font_size }}{% if enable_accordion %} accordion__title{% endif %}" data-collapsible-trigger>
                         {%- if title != blank -%}
                           {{ title }}
@@ -157,7 +146,7 @@
                   {%- endif -%}
 
                 {%- when 'social' -%}
-                  <details class="footer__block footer__block--social{% if enable_accordion %} accordion{% endif %}" style="{{ block_style }}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
+                  <details class="footer__block footer__block--social{% if enable_accordion %} accordion{% endif %}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
                     <summary class="{% if title != blank %}h3 footer__block__title {{ block.settings.heading_font_size }}{% if enable_accordion %} accordion__title{% endif %}{% else %}hidden{% endif %}" data-collapsible-trigger>
                       {%- if title != blank -%}
                         {{ title | escape }}
@@ -180,7 +169,7 @@
                   </details>
 
                 {%- when 'text' -%}
-                  <details class="footer__block footer__block--text{% if enable_accordion %} accordion{% endif %}" style="{{ block_style }}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
+                  <details class="footer__block footer__block--text{% if enable_accordion %} accordion{% endif %}" {{ block.shopify_attributes }} data-collapsible desktop="false" mobile="{{ enable_accordion }}">
                     <summary class="{% if title != blank %}h3 footer__block__title {{ block.settings.heading_font_size }}{% if enable_accordion %} accordion__title{% endif %}{% else %}hidden{% endif %}" data-collapsible-trigger>
                       {%- if title != blank -%}
                         {{ title | escape }}
@@ -214,7 +203,7 @@
                   </details>
 
                 {%- when 'newsletter' -%}
-                  <div class="footer__block footer__block--newsletter" style="{{ block_style }}" {{ block.shopify_attributes }}>
+                  <div class="footer__block footer__block--newsletter" {{ block.shopify_attributes }}>
                     <div class="footer__newsletter__wrapper">
                       {%- if title != blank -%}
                         <h2 class="footer__block__title {{ block.settings.heading_font_size }}">{{ title }}</h2>
@@ -233,7 +222,7 @@
                   </div>
 
                 {%- when 'image' -%}
-                  <div class="footer__block footer__block--image" style="{{ block_style }}" {{ block.shopify_attributes }}>
+                  <div class="footer__block footer__block--image" {{ block.shopify_attributes }}>
                     {%- if block.settings.image != blank -%}
                       {%- liquid
                         assign image_width = block.settings.image_width
@@ -260,7 +249,7 @@
                   </div>
 
                 {%- when 'divider' -%}
-                  <div class="footer__block footer__block--divider{{ inline_blocks_placeholder }}" style="{{ block_style }}">
+                  <div class="footer__block footer__block--divider{{ inline_blocks_placeholder }}">
                     {%- render 'divider' block: block -%}
                   </div>
               {%- endcase -%}
@@ -268,15 +257,7 @@
           {%- endfor -%}
 
           {%- liquid
-            if blocks_width <= 100
-              assign inline_blocks = ' footer__block--divider--inline'
-            endif
-
-            if one_third_block_count == blocks_size
-              echo blocks_code | replace: inline_blocks_placeholder, inline_blocks | replace: '--desktop-width: 33%;', '--desktop-width: 33.333333%;'
-            else
-              echo blocks_code | replace: inline_blocks_placeholder, inline_blocks
-            endif
+            echo blocks_code | replace: inline_blocks_placeholder, inline_blocks
           -%}
         </div>
       </collapsible-elements>
@@ -378,17 +359,6 @@
             {"value": "heading-large", "label": "Large"},
             {"value": "heading-x-large", "label": "Extra large"}
           ]
-        },
-        {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 33,
-          "info": "Desktop only"
         },
         {
           "type": "header",
@@ -515,17 +485,6 @@
           "label": "Show social icons",
           "info": "Edit your social settings and accounts in [Theme settings](/admin/themes/current/editor?context=theme)",
           "default": false
-        },
-        {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 33,
-          "info": "Desktop only"
         }
       ]
     },
@@ -561,17 +520,6 @@
           "type": "richtext",
           "id": "text",
           "label": "Text"
-        },
-        {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 33,
-          "info": "Desktop only"
         },
         {
           "type": "header",
@@ -644,17 +592,6 @@
           "default": "<p>Share store details, promotions, or brand content with your customers.</p>"
         },
         {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 33,
-          "info": "Desktop only"
-        },
-        {
           "type": "header",
           "content": "Mobile"
         },
@@ -696,17 +633,6 @@
           ]
         },
         {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 33,
-          "info": "Desktop only"
-        },
-        {
           "type": "header",
           "content": "Mobile"
         },
@@ -728,17 +654,6 @@
           "id": "show_line",
           "label": "Show line",
           "default": true
-        },
-        {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 1,
-          "info": "Desktop only"
         },
         {
           "type": "header",
@@ -791,17 +706,6 @@
           "id": "image_link",
           "label": "Image link",
           "info": "Optional link when image is clicked"
-        },
-        {
-          "type": "range",
-          "id": "column_width",
-          "label": "Column width",
-          "unit": "%",
-          "min": 1,
-          "max": 100,
-          "step": 1,
-          "default": 33,
-          "info": "Desktop only"
         }
       ]
     }
