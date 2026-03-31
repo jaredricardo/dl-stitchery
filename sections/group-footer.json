@@ -43,8 +43,8 @@
         "image_6QiE9m": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DS-PORTRAIT-LOGO-WHT.png",
-            "image_width": 400,
+            "image": "shopify://shop_images/DS_MAIN_LOGO_WHT.png",
+            "image_width": 250,
             "image_link": ""
           }
         }
@@ -53,6 +53,9 @@
         "social",
         "newsletter",
         "image_6QiE9m"
+      ],
+      "custom_css": [
+        ".footer__block.footer__block--image {display: flex; justify-content: center;}"
       ],
       "settings": {
         "logo_image_width": 150,
