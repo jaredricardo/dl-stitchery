@@ -20,7 +20,6 @@
             "title": "Connect with Us",
             "heading_font_size": "heading-x-small",
             "text": "<p>elizabethnagle@icloud.com</p><p>203-249-7930</p>",
-            "column_width": 25,
             "enable_follow_on_shop": false,
             "enable_accordion": false
           }
@@ -38,8 +37,7 @@
             "button_type": "btn--white",
             "button_size": "",
             "button_style": "btn--outline",
-            "show_social_links": false,
-            "column_width": 33
+            "show_social_links": false
           }
         },
         "image_6QiE9m": {
@@ -47,8 +45,7 @@
           "settings": {
             "image": "shopify://shop_images/DS-PORTRAIT-LOGO-WHT.png",
             "image_width": 400,
-            "image_link": "",
-            "column_width": 1
+            "image_link": ""
           }
         }
       },

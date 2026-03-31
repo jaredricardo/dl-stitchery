@@ -26,69 +26,19 @@
         "heading_tag": "automatic"
       }
     },
-    "section-double": {
-      "type": "section-double",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "The Beginning",
-            "heading_font_size": "heading-x-large",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Doolittle Stitchery was born out of a love for needlepoint instilled in artist Elizabeth Nagle at a young age. Elizabeth has been hand painting and custom designing needlepoint for over 30 years.</p>",
-            "text_font_size": "body-medium",
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "image_1": "shopify://shop_images/Screenshot_2026-01-21_at_1.25.05_PM.png",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "layout": "is-reversed",
-        "width": "wrapper",
-        "height": "screen-height-one-half",
-        "mobile_height": "screen-height-one-third--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "show_placeholder": true
-      }
-    },
     "section-double-0": {
       "type": "section-double",
       "blocks": {
-        "heading-0": {
-          "type": "heading",
-          "settings": {
-            "title": "our history",
-            "heading_font_size": "heading-x-large",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
         "text-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Elizabeth’s first job, as a teenager, was working as a production painter while living in London, England. Moving back to the US to attend college, she came away with a skill and a passion that has stayed with her ever since. </p><p>While studying fine art at the San Francisco Art Institute painting canvases paid the rent and later it afforded her the ability to work from home while raising her children. </p><p>She has been trained by and designed for some of the best in the business, including Dede Ogden, Erica Wilson and the Silver Needle. A recent move to a beautiful town in Southern Vermont, where the mountains loom large, inspired Beth’s first wholesale line, Ski the East and West, canvases. </p>",
-            "text_font_size": "body-medium",
+            "text": "<p><strong>Doolittle Stitchery is a celebration of artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Elizabeth “Beth” Nagle and her daughters, Tess and Grace, the studio creates needlepoint canvases that feel both timeless and distinctly personal.</strong></p><p><strong>The name traces back to Doolittle Lake in Connecticut, where long summer afternoons were spent stitching side by side—moments of calm, creativity, and connection that continue to shape the spirit of the brand.</strong></p><p><strong>Beth’s lifelong devotion to needlepoint, from her early training in London to decades of design work, lends each canvas a sense of depth and refinement. Her aesthetic is classic yet inviting—rooted in tradition, but never bound by it.</strong></p><p><strong>Together, Tess and Grace bring a new dimension to the studio. Through Hello Tess Designs, Tess introduces a fresh, expressive perspective, while Grace’s work reflects a deep belief in the restorative, almost meditative rhythm of stitching.</strong></p>",
+            "text_font_size": "body-large",
             "padding_bottom": 16
           }
         }
       },
       "block_order": [
-        "heading-0",
         "text-0"
       ],
       "custom_css": [
@@ -99,13 +49,54 @@
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "",
-        "width": "wrapper",
+        "width": "wrapper--full",
         "height": "screen-height-one-half",
         "mobile_height": "image-height--mobile",
         "reverse_blocks": false,
-        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
+        "color_scheme": "scheme-53b0d1bd-154b-4f31-b551-ed748bd58e9b",
         "padding_top": 0,
         "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section-double": {
+      "type": "section-double",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "The Beginning",
+            "heading_font_size": "heading-x-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>At Doolittle Stitchery, needlepoint becomes more than a craft—it is a creative ritual, a source of beauty, and a way to hold onto meaningful moments. Each canvas is designed to be savored in the making and treasured long after the final stitch.</strong></p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/Sail_Boats_Pillow_-_P125.png",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "is-reversed",
+        "width": "wrapper",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-third--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-53b0d1bd-154b-4f31-b551-ed748bd58e9b",
+        "padding_top": 50,
+        "padding_bottom": 50,
         "show_placeholder": true
       }
     },
@@ -116,7 +107,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Doolittle Stitchery is dedicated to creating a unique line of needlepoint canvases to inspire stitchers of all ages and abilities. Doolittle Stitchery designs are sold by needlepoint retail shops throughout the U.S.  For ordering, please contact your local needlepoint shop or select a shop from our list under “Retailers”. I hope you enjoy browsing!</p>",
-            "text_font_size": "body-medium",
+            "text_font_size": "body-x-large",
             "padding_bottom": 16
           }
         },
@@ -141,7 +132,7 @@
       "settings": {
         "align_text": "text-center",
         "width": "wrapper",
-        "color_scheme": "scheme-08226272-bcb7-4bcd-bdcd-78f787cff5e8",
+        "color_scheme": "scheme-53b0d1bd-154b-4f31-b551-ed748bd58e9b",
         "overlay_type": "disabled",
         "padding_top": 50,
         "padding_bottom": 50
@@ -150,8 +141,8 @@
   },
   "order": [
     "main-page",
-    "section-double",
     "section-double-0",
+    "section-double",
     "section_rich_text_ah37Tc"
   ]
 }
