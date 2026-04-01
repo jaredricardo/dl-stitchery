@@ -19,7 +19,7 @@
 
   assign b2b_discount_percentage = settings.b2b_discount_percentage
 
-  if b2b_discount_percentage > 0 and customer.tags contains 'b2b'
+  if b2b_discount_percentage > 0 and customer.tags contains 'b2b' and settings.b2b_discount_percentage != 0
     assign amount_off = upsell_variant.price | times: b2b_discount_percentage | divided_by: 100
     assign upsell_variant_price = upsell_variant.price | minus: amount_off
     if settings.currency_code_enable

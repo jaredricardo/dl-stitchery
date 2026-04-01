@@ -18,7 +18,7 @@
         "step": 1,
         "min": 0,
         "max": 100,
-        "info": "***Percentage discount applied to all products for B2B customers. 0 turns off the discount. This discount must be made in the discount admin as an automatic discount with the same percentage."
+        "info": "***Percentage discount applied to all products for B2B customers. 0 turns off the discount VISUALLY. This discount must be made in the discount admin as an automatic discount with the same percentage to actually apply the discount to the items.***"
       }
     ]
   },
