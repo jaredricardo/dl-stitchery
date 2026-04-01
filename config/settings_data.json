@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "b2b_discount_percentage": 20,
+    "b2b_discount_percentage": 0,
     "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
     "menu_bg_color": "#ffffff",
     "header_link": "#14264b",
