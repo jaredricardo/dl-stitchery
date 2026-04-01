@@ -90,7 +90,7 @@
             "style": "collapsible",
             "show_description": true,
             "show_read_more": false,
-            "default_open": false,
+            "default_open": true,
             "heading": "Description",
             "heading_font_size": "body-medium",
             "text": "",
