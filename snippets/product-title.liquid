@@ -34,10 +34,10 @@
         <span data-zoom-caption>{{ 'home_page.onboarding.product_title' | t }}</span>
       {%- else -%}
         {%- unless is_title_linked -%}
-          <span data-zoom-caption>{{ product.title | strip_html }}</span>
+          <span data-zoom-caption>{{ product.title | strip_html }}{%- if product.selected_or_first_available_variant.sku %} - {{ product.selected_or_first_available_variant.sku }}{% endif %}</span>
         {%- else -%}
           <a href="{{ product.url }}">
-            <span data-zoom-caption>{{ product.title | strip_html }}</span>
+            <span data-zoom-caption>{{ product.title | strip_html }}{%- if product.selected_or_first_available_variant.sku %} - {{ product.selected_or_first_available_variant.sku }}{% endif %}</span>
           </a>
         {%- endunless -%}
       {%- endif -%}
