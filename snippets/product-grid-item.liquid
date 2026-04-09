@@ -620,7 +620,7 @@
               endif
 
               capture featured_image
-                render 'image', image: product.featured_media.preview_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, loading: loading, fetchpriority: fetchpriority, preload: preload, attributes: image_animations, cover: true
+                render 'image', image: product.featured_media.preview_image, aspect_ratio: aspect_ratio, sizes: sizes, widths: widths, loading: loading, fetchpriority: fetchpriority, preload: preload, attributes: image_animations, cover: false
               endcapture
             -%}
 
