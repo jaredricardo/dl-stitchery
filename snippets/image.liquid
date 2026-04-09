@@ -38,7 +38,7 @@
   assign cover = cover | default: false
   assign fill = false
 
-  if aspect_ratio != image.aspect_ratio
+  if aspect_ratio != image.aspect_ratio and cover == true
     assign fill = true
   endif
 
