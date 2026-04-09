@@ -732,7 +732,12 @@
     >
       <div class="product-item__info {{ settings.product_grid_font_size }}">
         <a class="product-link" href="{{ product_url }}" data-product-link="{{ product_url }}">
-          <p class="product-item__title">{{ product.title | strip_html | escape }}{% if product.selected_or_first_available_variant.sku %} - {{ product.selected_or_first_available_variant.sku }} {% endif %}</p>
+          <p class="product-item__title">
+            {{ product.title | strip_html | escape -}}
+            {%- if product.selected_or_first_available_variant.sku %}
+              - {{ product.selected_or_first_available_variant.sku }}
+            {% endif %}
+          </p>
 
           <div class="product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
             {%- if any_sibling_cutline or product_item_cutline != blank -%}
