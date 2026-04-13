@@ -633,6 +633,17 @@
 
 {{ 'theme.css' | asset_url | stylesheet_tag }}
 
+{% if settings.hide_atc_from_non_b2b %}
+  <style>
+
+    quick-add-product,
+    product-form {
+      display: none !important;
+    }
+
+  </style>
+{% endif %}
+
 {%- if settings.show_siblings or settings.enable_swatches -%}
   {{ 'swatches.css' | asset_url | stylesheet_tag }}
   {%- render 'swatch-color-list' -%}

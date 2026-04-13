@@ -11,6 +11,12 @@
     "name": "B2B Settings",
     "settings": [
       {
+        "type": "checkbox",
+        "id": "hide_atc_from_non_b2b",
+        "label": "Hide product ATC from non B2B users",
+        "default": true
+      },
+      {
         "type": "range",
         "id": "b2b_discount_percentage",
         "label": "B2B Discount Percentage",
