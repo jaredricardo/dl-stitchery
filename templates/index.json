@@ -14,6 +14,7 @@
       "blocks": {
         "scrolling_text-0": {
           "type": "scrolling_text",
+          "disabled": true,
           "settings": {
             "text": "<p>Where every stitch tells a story</p>",
             "color": "#fff8db"
@@ -110,6 +111,7 @@
     },
     "section_collection_jjzwEz": {
       "type": "section-collection",
+      "disabled": true,
       "name": "Featured collection",
       "settings": {
         "featured_collection": "all",
@@ -141,7 +143,7 @@
       "settings": {
         "background_color": "#4761a6",
         "image": "shopify://shop_images/DS-PORTRAIT-LOGO-WHT.png",
-        "rich_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis pharetra vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In ultrices cursus erat non aliquet. Ut non purus nec ex blandit dignissim in ut felis. Sed sed mattis libero, ut dignissim dolor. Aliquam erat volutpat. Nunc accumsan lorem in cursus ornare.</p>",
+        "rich_text": "<p><em>Doolittle Stitchery is a celebration of artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Elizabeth “Beth” Nagle and her daughters, Tess and Grace, the studio creates needlepoint canvases that feel both timeless and distinctly personal.</em> </p>",
         "text_color": "#ffffff",
         "image_position_desktop": "left",
         "image_position_mobile": "top",
@@ -166,8 +168,8 @@
         "button_style": "btn--solid",
         "show_arrow": false,
         "layout_desktop": "grid",
-        "grid": 4,
-        "rows": 3,
+        "grid": 5,
+        "rows": 2,
         "width": "wrapper",
         "layout_mobile": "slider",
         "color_scheme": "scheme-53b0d1bd-154b-4f31-b551-ed748bd58e9b",
@@ -176,50 +178,23 @@
         "heading_tag": "automatic"
       }
     },
-    "section-custom-content": {
-      "type": "section-custom-content",
-      "blocks": {
-        "image-3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/brown-boxes-tied-up-in-a-bow.jpg",
-            "title": "Wholesale",
-            "heading_font_size": "heading-medium",
-            "text": "<p>If you are a retailer interested in carrying our designs </p><p>please contact us!</p>",
-            "text_font_size": "body-medium",
-            "flex_align": "align--bottom-left",
-            "show_text_background": false,
-            "bg_color": "",
-            "color": "#000000",
-            "overlay_type": "disabled",
-            "link_text": "Contact Us",
-            "link": "shopify://pages/contact",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image-3"
-      ],
-      "settings": {
-        "borders": false,
-        "gutters": true,
-        "width": "wrapper--full-padded",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "scheme-53b0d1bd-154b-4f31-b551-ed748bd58e9b",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
     "176897526404e90a93": {
       "type": "_blocks",
       "settings": {}
+    },
+    "simple_image_section_j7z4rr": {
+      "type": "simple-image-section",
+      "name": "Simple Image Section",
+      "settings": {
+        "background_color": "#4761a6",
+        "image": "shopify://shop_images/DS-PORTRAIT-LOGO-WHT.png",
+        "rich_text": "<p><em>Doolittle Stitchery is a celebration of artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Elizabeth “Beth” Nagle and her daughters, Tess and Grace, the studio creates needlepoint canvases that feel both timeless and distinctly personal.</em> </p>",
+        "text_color": "#ffffff",
+        "image_position_desktop": "left",
+        "image_position_mobile": "top",
+        "desktop_height": "50",
+        "mobile_height": "50"
+      }
     }
   },
   "order": [
@@ -228,7 +203,7 @@
     "section_collection_jjzwEz",
     "simple_image_section_ckyMV7",
     "section_collection_QtyDpd",
-    "section-custom-content",
-    "176897526404e90a93"
+    "176897526404e90a93",
+    "simple_image_section_j7z4rr"
   ]
 }

@@ -104,6 +104,7 @@
         },
         "accordion-0": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "style": "drawer",
             "show_description": false,
@@ -301,7 +302,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Free shipping on orders over $200",
+            "heading": "Where Every Stitch Tells A Story",
             "heading_font_size": "heading-x-small"
           }
         },
@@ -318,7 +319,7 @@
         "heading-0": {
           "type": "heading",
           "settings": {
-            "heading": "1 Year Warranty",
+            "heading": "Where Every Stitch Tells A Story",
             "heading_font_size": "heading-x-small"
           }
         }
@@ -385,6 +386,7 @@
         "text-3",
         "text-4"
       ],
+      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "Care Instructions",
@@ -447,6 +449,7 @@
         "icon-4",
         "icon-5"
       ],
+      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "Shipping  & Returns",
@@ -497,6 +500,7 @@
         "image-0",
         "image-1"
       ],
+      "disabled": true,
       "settings": {
         "default_open": false,
         "title": "Sourcing & Materials",
