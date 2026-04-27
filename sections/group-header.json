@@ -17,9 +17,9 @@
         "text-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Retailers please register here for a wholesale account</p>",
+            "text": "<p><a href=\"/pages/wholesale-application\" title=\"Wholesale Application\">Retailers please register here for a wholesale account</a></p>",
             "target_url_enabled": false,
-            "target_url": "",
+            "target_url": "shopify://pages/wholesale-application",
             "target_referrer_enabled": false,
             "target_referrer": "",
             "target_device_enabled": false,
@@ -30,12 +30,15 @@
       "block_order": [
         "text-0"
       ],
+      "custom_css": [
+        ".announcement__text a::after,.announcement__text p a{color: white; --main-color: white !important; --hover-color: white !important;}"
+      ],
       "settings": {
         "show_border": false,
         "layout": "slider",
         "slider_speed": 5,
         "text_alignment": "center",
-        "show_arrows": true,
+        "show_arrows": false,
         "marquee_speed": 100,
         "message_spacing": 10,
         "text_font_size": "body-small",

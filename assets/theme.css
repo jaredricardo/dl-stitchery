@@ -7984,6 +7984,9 @@ html.supports-touch ticker-bar[data-slide]:not([paused]) .ticker--animated {
   width: 100%;
   overflow: hidden;
 }
+.drawer__main-menu {
+  padding-bottom: 1rem;
+}
 @media only screen and (max-width: 749px) {
   .drawer--header .drawer__main-menu--desktop {
     display: none;
