@@ -31,7 +31,7 @@
         "text-0"
       ],
       "custom_css": [
-        ".announcement__text a::after,.announcement__text p a{color: white; --main-color: white !important; --hover-color: white !important;}"
+        ".announcement__text a::after,.announcement__text p a {color: white; --main-color: white !important; --hover-color: white !important;}"
       ],
       "settings": {
         "show_border": false,
@@ -97,27 +97,21 @@
             "text_font_size": "body-x-large",
             "highlight_item": "Sale",
             "highlight_item_color": "#d02e2e",
-            "padding": false,
+            "padding": true,
             "padding_bottom": 14
-          }
-        },
-        "divider": {
-          "type": "divider",
-          "settings": {
-            "show_line": true,
-            "padding_bottom": 8
           }
         },
         "socials": {
           "type": "socials",
           "settings": {
             "width": "full",
-            "pin_to_bottom": false,
+            "pin_to_bottom": true,
             "padding_bottom": 10
           }
         },
         "localization": {
           "type": "localization",
+          "disabled": true,
           "settings": {
             "show_locale_selector": true,
             "show_locale_code": false,
@@ -133,7 +127,6 @@
       },
       "block_order": [
         "menu",
-        "divider",
         "socials",
         "localization"
       ],
