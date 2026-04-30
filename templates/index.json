@@ -142,7 +142,7 @@
       "name": "Simple Image Section",
       "settings": {
         "background_color": "#4761a6",
-        "image": "shopify://shop_images/DS-PORTRAIT-LOGO-WHT.png",
+        "image": "shopify://shop_images/logo.png",
         "rich_text": "<p><em>Doolittle Stitchery is a celebration of artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Elizabeth “Beth” Nagle and her daughters, Tess and Grace, the studio creates needlepoint canvases that feel both timeless and distinctly personal.</em> </p>",
         "text_color": "#ffffff",
         "image_position_desktop": "left",
