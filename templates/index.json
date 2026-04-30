@@ -39,7 +39,7 @@
         "direction": "ticker-rtl",
         "height": "screen-height-two-thirds",
         "mobile_image": "shopify://shop_images/sewing-tools-flatlay-knolling.jpg",
-        "mobile_height": "screen-height-full--mobile",
+        "mobile_height": "screen-height-one-half--mobile",
         "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "overlay_type": "opacity",
         "padding_top": 0,
