@@ -161,7 +161,7 @@
         "description": "",
         "text_font_size": "body-medium",
         "layout": "inline",
-        "link_text": "Shop Now",
+        "link_text": "",
         "link_url": "",
         "button_type": "btn--primary",
         "button_size": "btn--large",
