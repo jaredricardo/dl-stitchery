@@ -26,6 +26,7 @@
       ],
       "name": "Image with scrolling text",
       "settings": {
+        "image_1": "shopify://shop_images/IMG_0731.heic",
         "link": "",
         "message_spacing": 30,
         "marquee_speed": 150,
