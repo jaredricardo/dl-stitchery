@@ -26,7 +26,6 @@
       ],
       "name": "Image with scrolling text",
       "settings": {
-        "image_1": "shopify://shop_images/IMG_0731.heic",
         "link": "",
         "message_spacing": 30,
         "marquee_speed": 150,
@@ -39,7 +38,7 @@
         "scrolling_align": "align--middle-center",
         "direction": "ticker-rtl",
         "height": "screen-height-two-thirds",
-        "mobile_image": "shopify://shop_images/sewing-tools-flatlay-knolling.jpg",
+        "mobile_image": "shopify://shop_images/Doolittle_Square_Picture.heic",
         "mobile_height": "screen-height-one-half--mobile",
         "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "overlay_type": "opacity",
