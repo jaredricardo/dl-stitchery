@@ -131,6 +131,7 @@
         "localization"
       ],
       "settings": {
+        "logo": "shopify://shop_images/Doolittle_Square_Picture.heic",
         "logo_max_limit": 120,
         "color_scheme": "scheme-1"
       }
