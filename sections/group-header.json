@@ -86,60 +86,10 @@
         "padding_top": 25,
         "padding_bottom": 25
       }
-    },
-    "mobile-menu": {
-      "type": "mobile-menu",
-      "blocks": {
-        "menu": {
-          "type": "menu",
-          "settings": {
-            "mobile_menu_linklist": "main-menu",
-            "text_font_size": "body-x-large",
-            "highlight_item": "Sale",
-            "highlight_item_color": "#d02e2e",
-            "padding": true,
-            "padding_bottom": 14
-          }
-        },
-        "socials": {
-          "type": "socials",
-          "settings": {
-            "width": "full",
-            "pin_to_bottom": true,
-            "padding_bottom": 10
-          }
-        },
-        "localization": {
-          "type": "localization",
-          "disabled": true,
-          "settings": {
-            "show_locale_selector": true,
-            "show_locale_code": false,
-            "show_globe_icon": true,
-            "show_country_selector": true,
-            "show_country_name": false,
-            "show_country_flag": true,
-            "width": "full",
-            "pin_to_bottom": true,
-            "padding_bottom": 14
-          }
-        }
-      },
-      "block_order": [
-        "menu",
-        "socials",
-        "localization"
-      ],
-      "settings": {
-        "logo": "shopify://shop_images/Doolittle_Square_Picture.heic",
-        "logo_max_limit": 120,
-        "color_scheme": "scheme-1"
-      }
     }
   },
   "order": [
     "announcement",
-    "header",
-    "mobile-menu"
+    "header"
   ]
 }
