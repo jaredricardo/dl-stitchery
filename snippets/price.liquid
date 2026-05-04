@@ -106,47 +106,49 @@
       {%- if show_badges %} price--show-badge{% endif -%}
     "
   >
-    <div class="price__container">
-      <div class="price__regular">
-        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-        <span class="price-item price-item--regular">{{ money_price }}</span>
-      </div>
-
-      {% if compare_at_price > price %}
-        <div class="price__sale">
-          <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-          <span class="price-item price-item--sale price-item--last">
-            {{ money_price }}
-          </span>
-
+    {% if customer.tags contains 'b2b' %}
+      <div class="price__container">
+        <div class="price__regular">
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <span>
-            <s class="price-item price-item--regular">
-              {% if settings.currency_code_enable %}
-                {{ compare_at_price | money_with_currency }}
-              {% else %}
-                {{ compare_at_price | money }}
-              {% endif %}
-            </s>
-          </span>
+          <span class="price-item price-item--regular">{{ money_price }}</span>
         </div>
-      {% endif %}
 
-      <small class="unit-price caption{% if target.unit_price_measurement == nil %} hidden{% endif %}">
-        <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
-        <span class="price-item price-item--last">
-          <span>{{- unit_price -}}</span>
-          <span aria-hidden="true">/</span>
-          <span class="visually-hidden">&nbsp;{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
-          <span>
-            {%- if target.unit_price_measurement.reference_value != 1 -%}
-              {{- target.unit_price_measurement.reference_value -}}
-            {%- endif -%}
-            {{ target.unit_price_measurement.reference_unit }}
+        {% if compare_at_price > price %}
+          <div class="price__sale">
+            <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
+            <span class="price-item price-item--sale price-item--last">
+              {{ money_price }}
+            </span>
+
+            <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
+            <span>
+              <s class="price-item price-item--regular">
+                {% if settings.currency_code_enable %}
+                  {{ compare_at_price | money_with_currency }}
+                {% else %}
+                  {{ compare_at_price | money }}
+                {% endif %}
+              </s>
+            </span>
+          </div>
+        {% endif %}
+
+        <small class="unit-price caption{% if target.unit_price_measurement == nil %} hidden{% endif %}">
+          <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+          <span class="price-item price-item--last">
+            <span>{{- unit_price -}}</span>
+            <span aria-hidden="true">/</span>
+            <span class="visually-hidden">&nbsp;{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
+            <span>
+              {%- if target.unit_price_measurement.reference_value != 1 -%}
+                {{- target.unit_price_measurement.reference_value -}}
+              {%- endif -%}
+              {{ target.unit_price_measurement.reference_unit }}
+            </span>
           </span>
-        </span>
-      </small>
-    </div>
+        </small>
+      </div>
+    {% endif %}
 
     {%- if sale_badge or final_sale -%}
       <div

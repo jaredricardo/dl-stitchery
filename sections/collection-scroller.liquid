@@ -1,0 +1,216 @@
+{% style %}
+
+  [data-section-id="{{ section.id }}"] {
+    background-color: {{ section.settings.bg_color }};
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  @media screen and (min-width: 768px) {
+    [data-section-id="{{ section.id }}"] {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  {% if section.settings.image_aspect_ratio == 'square' %}
+    [data-section-id="{{ section.id }}"] .swiper-slide img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+  {% elsif section.settings.image_aspect_ratio == 'portrait' %}
+    [data-section-id="{{ section.id }}"] .swiper-slide img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+    }
+  {% else %}
+    [data-section-id="{{ section.id }}"] .swiper-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  {% endif %}
+
+{% endstyle %}
+
+{%- capture swiper_json -%}
+{
+  "slidesPerView": 1.4,
+  "centeredSlides": false,
+  "spaceBetween": 20,
+  "navigation": {
+    "nextEl": "#swiper-next-{{ section.id }}",
+    "prevEl": "#swiper-prev-{{ section.id }}"
+  },
+  "breakpoints": {
+    "640": {
+      "slidesPerView": 2.4,
+      "spaceBetween": 20
+    },
+    "1024": {
+      "slidesPerView": 3.4,
+      "spaceBetween": 40
+    }
+  }
+}
+
+{%- endcapture -%}
+
+<section data-section-id="{{ section.id }}" class="wrapper--full-padded collection-scroller" {% if section.settings.section_anchor_id %} id="{{ section.settings.section_anchor_id }}" {% endif %}>
+    <div class="header-container">
+        <button id="swiper-prev-{{ section.id }}" class="header-swiper-button-prev">
+            {% render 'icon-nav-arrow-left' %}
+        </button>
+        {% if section.settings.header %}
+            <h2>{{ section.settings.header }}</h2>
+        {% endif %}
+        <button id="swiper-next-{{ section.id }}" class="header-swiper-button-next">
+            {% render 'icon-nav-arrow-right' %}
+        </button>
+    </div>
+    <div class="swiper" data-swiper-json="{{ swiper_json | strip_newlines | strip | escape }}">
+        <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+
+                {% assign image = block.settings.image | default: block.settings.collection.image %}
+                {% assign title = block.settings.title | default: block.settings.collection.title %}
+                {% assign url = block.settings.collection_url | default: block.settings.collection.url %}
+
+                <div class="swiper-slide">
+                    <a href="{{ url }}">
+                        <img src="{{ image | image_url: width: 600 }}" alt="{{ title | escape }}">
+                        <span>{{ title }}</span>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Collection Scroller",
+  "enabled_on": {
+    "templates": ["product", "collection", "page", "index", "article", "blog", "404", "cart", "search"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_anchor_id",
+      "label": "Section Anchor ID (optional)"
+    },
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Image aspect ratio",
+      "default": "square",
+      "options": [
+        { "value": "square", "label": "Square (1:1)" },
+        { "value": "portrait", "label": "Portrait (3:4)" },
+        { "value": "adapt", "label": "Adapt to image" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Padding — Desktop"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Padding — Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Top",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Bottom",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 32
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_item",
+      "name": "Collection Item",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "url",
+          "id": "collection_url",
+          "label": "Collection URL",
+          "info": "Overrides the collection URL if set"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Custom Title",
+          "info": "Overrides the collection title if set"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Custom Image",
+          "info": "Overrides the collection image if set"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Scroller"
+    }
+  ]
+}
+{% endschema %}

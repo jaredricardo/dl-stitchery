@@ -41,6 +41,10 @@
     </button>
     <ul id="sort-list" class="popout-list" data-popout-list data-scroll-lock-scrollable>
       {% for option in sort_options %}
+        {% unless option.name == "Alphabetically, A-Z" or option.name == "Alphabetically, Z-A" %}
+          {% continue %}
+        {% endunless %}  
+
         {% assign active = false %}
         {%- if sort_by == option.value -%}
           {% assign active = true %}
@@ -69,6 +73,7 @@
               {{ option.name }}
           </option>
         {%- endcapture -%}
+
       {%- endfor -%}
     </ul>
 

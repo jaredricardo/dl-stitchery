@@ -208,13 +208,6 @@
             "padding_bottom": 16
           }
         },
-        "divider": {
-          "type": "divider",
-          "settings": {
-            "show_line": true,
-            "padding_bottom": 20
-          }
-        },
         "upsell": {
           "type": "upsell",
           "disabled": true,
@@ -227,13 +220,6 @@
             "autoplay_speed": 8,
             "bg_color": "",
             "padding_bottom": 24
-          }
-        },
-        "divider-0": {
-          "type": "divider",
-          "settings": {
-            "show_line": true,
-            "padding_bottom": 16
           }
         },
         "features": {
@@ -267,9 +253,7 @@
         "icon-0",
         "icon-1",
         "icon-2",
-        "divider",
         "upsell",
-        "divider-0",
         "features"
       ],
       "settings": {

@@ -4,6 +4,9 @@
     {%- render 'head' -%}
 
     {{ content_for_header }}
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   </head>
 
   <body
@@ -105,5 +108,24 @@
     {% endif %}
 
     <!-- And above this comment line ================================================== -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.swiper').forEach(function (el) {
+          var json = el.getAttribute('data-swiper-json');
+          var options = {};
+          if (json) {
+            try {
+              options = JSON.parse(json);
+            } catch (e) {
+              console.warn('Swiper: invalid data-swiper-json on', el, e);
+            }
+          }
+          new Swiper(el, options);
+        });
+      });
+    </script>
   </body>
 </html>

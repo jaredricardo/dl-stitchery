@@ -47,6 +47,114 @@
         "show_placeholder": true
       }
     },
+    "collection_scroller_tjcxN6": {
+      "type": "collection-scroller",
+      "blocks": {
+        "collection_item_YMRzV8": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "animals",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_e3HeGX": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "baby-kids",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_w4CbA3": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "bag-tags",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_QGcDnw": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "barns",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_gBtrbE": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "golf-sports",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_kz6jMQ": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_HqP4qG": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "ornaments",
+            "collection_url": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_YMRzV8",
+        "collection_item_e3HeGX",
+        "collection_item_w4CbA3",
+        "collection_item_QGcDnw",
+        "collection_item_gBtrbE",
+        "collection_item_kz6jMQ",
+        "collection_item_HqP4qG"
+      ],
+      "name": "Collection Scroller",
+      "settings": {
+        "section_anchor_id": "",
+        "header": "Our Collections",
+        "bg_color": "#f2f2f2",
+        "image_aspect_ratio": "square",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 32
+      }
+    },
+    "simple_image_with_layout_zkY6iU": {
+      "type": "simple-image-with-layout",
+      "name": "Image with layout",
+      "settings": {
+        "section_anchor_id": "",
+        "color_scheme": "scheme-08226272-bcb7-4bcd-bdcd-78f787cff5e8",
+        "image_left": "shopify://shop_images/logo.png",
+        "image_left_alt": "",
+        "image_right": "shopify://shop_images/Maskgroup_2.png",
+        "image_right_alt": "",
+        "eyebrow": "",
+        "heading": "Doolittle Stitchery",
+        "subheading": "",
+        "body_text": "<p>Doolittle Stitchery is a celebration of artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Elizabeth “Beth” Nagle and her daughters, Tess and Grace, the studio creates needlepoint canvases that feel both timeless and distinctly personal.</p>",
+        "text_alignment": "left",
+        "content_vertical_align": "center",
+        "button_text": "About Us",
+        "button_url": "shopify://pages/about",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
     "section-double": {
       "type": "section-double",
       "blocks": {
@@ -94,6 +202,7 @@
         "image-2",
         "buttons"
       ],
+      "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/Screenshot_2026-02-05_at_7.59.13_PM.png",
         "image_width": "one-half",
@@ -135,20 +244,6 @@
         "padding_top": 50,
         "padding_bottom": 50,
         "heading_tag": "automatic"
-      }
-    },
-    "simple_image_section_ckyMV7": {
-      "type": "simple-image-section",
-      "name": "Simple Image Section",
-      "settings": {
-        "background_color": "#4761a6",
-        "image": "shopify://shop_images/DS-PORTRAIT-LOGO-WHT.png",
-        "rich_text": "<p><em>Doolittle Stitchery is a celebration of artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Elizabeth “Beth” Nagle and her daughters, Tess and Grace, the studio creates needlepoint canvases that feel both timeless and distinctly personal.</em> </p>",
-        "text_color": "#ffffff",
-        "image_position_desktop": "left",
-        "image_position_mobile": "top",
-        "desktop_height": "50",
-        "mobile_height": "50"
       }
     },
     "section_collection_QtyDpd": {
@@ -199,9 +294,10 @@
   },
   "order": [
     "section-hero-scrolling",
+    "collection_scroller_tjcxN6",
+    "simple_image_with_layout_zkY6iU",
     "section-double",
     "section_collection_jjzwEz",
-    "simple_image_section_ckyMV7",
     "section_collection_QtyDpd",
     "176897526404e90a93",
     "simple_image_section_j7z4rr"
