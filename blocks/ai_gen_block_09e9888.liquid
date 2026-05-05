@@ -1,0 +1,145 @@
+{% doc %}
+  @prompt
+    Generate for me a section that allows me to input liquid code for specific use cases on certain pages.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-custom-liquid-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.padding }}px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-custom-liquid-empty-{{ ai_gen_id }} {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    color: #666;
+  }
+
+  .ai-custom-liquid-empty-{{ ai_gen_id }} svg {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+    opacity: 0.3;
+  }
+
+  .ai-custom-liquid-empty-title-{{ ai_gen_id }} {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  .ai-custom-liquid-empty-text-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: #666;
+  }
+{% endstyle %}
+
+<custom-liquid-{{ ai_gen_id }}
+  class="ai-custom-liquid-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.custom_liquid != blank %}
+    {{ block.settings.custom_liquid }}
+  {% else %}
+    <div class="ai-custom-liquid-empty-{{ ai_gen_id }}">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="16 18 22 12 16 6"></polyline>
+        <polyline points="8 6 2 12 8 18"></polyline>
+      </svg>
+      <div class="ai-custom-liquid-empty-title-{{ ai_gen_id }}">Custom Liquid block</div>
+      <div class="ai-custom-liquid-empty-text-{{ ai_gen_id }}">Add your Liquid code in the block settings</div>
+    </div>
+  {% endif %}
+</custom-liquid-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CustomLiquid{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        const scripts = this.querySelectorAll('script');
+        scripts.forEach((script) => {
+          const newScript = document.createElement('script');
+          if (script.src) {
+            newScript.src = script.src;
+          } else {
+            newScript.textContent = script.textContent;
+          }
+          script.parentNode.replaceChild(newScript, script);
+        });
+      }
+    }
+
+    customElements.define('custom-liquid-{{ ai_gen_id }}', CustomLiquid{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Custom liquid",
+  "tag": null,
+  "settings": [
+    {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "Liquid code"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Padding",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom liquid"
+    }
+  ]
+}
+{% endschema %}
