@@ -1,0 +1,246 @@
+<!-- /sections/custom-footer.liquid -->
+
+{%- liquid
+  assign blocks_size = section.blocks.size
+  assign color_scheme = 'color-' | append: section.settings.color_scheme
+-%}
+
+{%- style -%}
+  .site-footer-wrapper {
+    --PT: {{ section.settings.padding_top }}px;
+    --PB: {{ section.settings.padding_bottom }}px;
+    --item-count: {{ blocks_size }};
+  }
+{%- endstyle -%}
+
+<footer
+  class="site-footer-wrapper section-padding {{ color_scheme }} custom-footer"
+  data-section-id="{{ section.id }}"
+  data-section-type="footer"
+>
+    <div class="top-row">
+        {% for block in section.blocks %}
+            {% if block.type == 'footer-link' %}
+                <a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>
+                    {% if block.settings.svg != blank %}
+                        <span>{{ block.settings.svg }}</span>
+                    {% endif %}
+                    {{ block.settings.title }}
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="middle-row custom-footer-social-link-container">
+        {% for block in section.blocks %}
+            {% if block.type == 'social-link' %}
+                <a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>
+                    {% if block.settings.svg != blank %}
+                        <span>{{ block.settings.svg }}</span>
+                    {% endif %}
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="bottom-row">
+        {% for block in section.blocks %}
+            {% if block.type == 'newsletter' %}
+                <div class="footer__newsletter__wrapper" {{ block.shopify_attributes }}>
+                    {%- if block.settings.title != blank -%}
+                        <h2 class="footer__block__title {{ block.settings.heading_font_size }}">{{ block.settings.title }}</h2>
+                    {%- endif -%}
+                    {%- if block.settings.text != blank -%}
+                        <div class="rte footer__newsletter__text">{{ block.settings.text }}</div>
+                    {%- endif -%}
+                    {%- render 'newsletter-form' block: block, footer: true -%}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Custom Footer",
+  "max_blocks": 20,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "scheme_1",
+      "label": "Color scheme"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Top",
+      "default": 75
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Bottom",
+      "default": 30
+    }
+  ],
+  "blocks": [
+    {
+      "type": "footer-link",
+      "name": "Footer Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Link text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link URL"
+        },
+        {
+          "type": "textarea",
+          "id": "svg",
+          "label": "SVG icon (optional)",
+          "info": "Paste inline SVG markup"
+        }
+      ]
+    },
+    {
+      "type": "social-link",
+      "name": "Social Link",
+      "settings": [
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "textarea",
+          "id": "svg",
+          "label": "SVG icon",
+          "info": "Paste inline SVG markup"
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Subscribers are under 'Accepts Marketing' in your [customer admin](/admin/customers)."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Newsletter"
+        },
+        {
+          "type": "select",
+          "id": "heading_font_size",
+          "label": "Heading size",
+          "default": "heading-medium",
+          "options": [
+            {"value": "heading-mini", "label": "Mini"},
+            {"value": "heading-x-small", "label": "Extra small"},
+            {"value": "heading-small", "label": "Small"},
+            {"value": "heading-medium", "label": "Medium"},
+            {"value": "heading-large", "label": "Large"},
+            {"value": "heading-x-large", "label": "Extra large"}
+          ]
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Join"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_arrow",
+          "label": "Show arrow",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "terms",
+          "label": "Show reCAPTCHA terms",
+          "default": true,
+          "info": "Recommended if your online store preferences have spam protection enabled."
+        },
+        {
+          "type": "checkbox",
+          "id": "show_name",
+          "label": "Show name field",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "Color",
+          "default": "btn--secondary",
+          "options": [
+            {"value": "btn--black", "label": "Black"},
+            {"value": "btn--white", "label": "White"},
+            {"value": "btn--primary", "label": "Primary"},
+            {"value": "btn--secondary", "label": "Secondary"}
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_size",
+          "label": "Size",
+          "default": "",
+          "options": [
+            {"label": "Small", "value": "btn--small"},
+            {"label": "Medium", "value": ""},
+            {"label": "Large", "value": "btn--large"}
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "default": "btn--solid",
+          "options": [
+            {"label": "Solid", "value": "btn--solid"},
+            {"label": "Outline", "value": "btn--outline"},
+            {"label": "Text", "value": "btn--text"}
+          ]
+        }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "groups": ["footer"]
+  }
+}
+{% endschema %}

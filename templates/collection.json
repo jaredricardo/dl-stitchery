@@ -67,78 +67,76 @@
         "padding_bottom": 0
       }
     },
-    "section_collections_list_kW6ier": {
-      "type": "section-collections-list",
+    "collection_scroller_TL3mpP": {
+      "type": "collection-scroller",
       "blocks": {
-        "collection_X3zcEi": {
-          "type": "collection",
+        "collection_item_ppq9nC": {
+          "type": "collection_item",
           "settings": {
-            "collection": "",
-            "collection_image": "shopify://shop_images/Screenshot_2026-01-21_at_1.23.54_PM.png",
-            "title": "Seasonal"
+            "collection": "animals",
+            "collection_url": "",
+            "title": ""
           }
         },
-        "collection_bGNFbF": {
-          "type": "collection",
+        "collection_item_dUjTFW": {
+          "type": "collection_item",
           "settings": {
-            "collection": "",
-            "collection_image": "shopify://shop_images/Screenshot_2026-01-21_at_1.30.53_PM.png",
-            "title": "Locations"
+            "collection": "baby-kids",
+            "collection_url": "",
+            "title": ""
           }
         },
-        "collection_BwLMLj": {
-          "type": "collection",
+        "collection_item_jBeNKt": {
+          "type": "collection_item",
           "settings": {
-            "collection": "zodiac",
-            "collection_image": "shopify://shop_images/Screenshot_2026-01-21_at_1.35.49_PM.png",
-            "title": "Zodiac Signs"
+            "collection": "bag-tags",
+            "collection_url": "",
+            "title": ""
           }
         },
-        "collection_YM9Hyq": {
-          "type": "collection",
+        "collection_item_kggb34": {
+          "type": "collection_item",
           "settings": {
-            "collection": "",
-            "collection_image": "shopify://shop_images/Screenshot_2026-01-21_at_1.25.05_PM.png",
-            "title": "Badges"
+            "collection": "barns",
+            "collection_url": "",
+            "title": ""
           }
         },
-        "collection_bdcVnX": {
-          "type": "collection",
+        "collection_item_B8mQGE": {
+          "type": "collection_item",
           "settings": {
-            "collection": "",
-            "collection_image": "shopify://shop_images/Screenshot_2026-01-21_at_1.26.54_PM.png",
-            "title": "Pillows, Clutches & Rugs"
+            "collection": "golf-sports",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_XYneU9": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "ornaments",
+            "collection_url": "",
+            "title": ""
           }
         }
       },
       "block_order": [
-        "collection_X3zcEi",
-        "collection_bGNFbF",
-        "collection_BwLMLj",
-        "collection_YM9Hyq",
-        "collection_bdcVnX"
+        "collection_item_ppq9nC",
+        "collection_item_dUjTFW",
+        "collection_item_jBeNKt",
+        "collection_item_kggb34",
+        "collection_item_B8mQGE",
+        "collection_item_XYneU9"
       ],
-      "name": "Collection list",
+      "name": "Collection Scroller",
       "settings": {
-        "title": "Our Collections",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "text_font_size": "body-medium",
-        "button_text": "",
-        "button_url": "shopify://collections",
-        "button_type": "btn--primary",
-        "button_size": "btn--small",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "aspect_ratio": 1,
-        "width": "wrapper--full-padded",
-        "layout": "grid",
-        "grid": 4,
-        "layout_mobile": "slider",
-        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
-        "padding_top": 32,
-        "padding_bottom": 32,
-        "heading_tag": "automatic"
+        "section_anchor_id": "",
+        "header": "Our Collections",
+        "bg_color": "#f2f2f2",
+        "image_aspect_ratio": "square",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 32
       }
     }
   },
@@ -147,6 +145,6 @@
     "collection-image-with-title",
     "subcollections",
     "collection",
-    "section_collections_list_kW6ier"
+    "collection_scroller_TL3mpP"
   ]
 }

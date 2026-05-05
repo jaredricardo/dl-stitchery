@@ -1,0 +1,110 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "custom-footer",
+      "blocks": {
+        "social_link_MXTU84": {
+          "type": "social-link",
+          "settings": {
+            "url": "#",
+            "svg": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-instagram\" viewbox=\"0 0 24 24\"><path d=\"M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5z\" stroke=\"#000\"></path><path d=\"m17.5 6.51.01-.011\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>"
+          }
+        },
+        "social_link_VCdUgT": {
+          "type": "social-link",
+          "settings": {
+            "url": "#",
+            "svg": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-facebook\" viewbox=\"0 0 24 24\"><path d=\"M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>"
+          }
+        },
+        "footer_link_7LcJCG": {
+          "type": "footer-link",
+          "settings": {
+            "title": "Wholesale",
+            "url": "shopify://pages/retailers",
+            "svg": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-star\" viewbox=\"0 0 24 24\"><path d=\"m8.587 8.236 2.598-5.232a.911.911 0 0 1 1.63 0l2.598 5.232 5.808.844a.902.902 0 0 1 .503 1.542l-4.202 4.07.992 5.75c.127.738-.653 1.3-1.32.952L12 18.678l-5.195 2.716c-.666.349-1.446-.214-1.319-.953l.992-5.75-4.202-4.07a.902.902 0 0 1 .503-1.54l5.808-.845z\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>"
+          }
+        },
+        "footer_link_jDYtrN": {
+          "type": "footer-link",
+          "settings": {
+            "title": "Find a retailer",
+            "url": "shopify://pages/retailers",
+            "svg": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-globe\" viewbox=\"0 0 24 24\"><path d=\"M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"m2.5 12.5 5.5 2L7 18l1 3M17 20.5l-.5-2.5-2.5-1v-3.5l3-1 4.5.5M19 5.5 18.5 7l-3.5.5v3l2.5-1h2l2 1M2.5 10.5l2.5-2L7.5 8l2-3-1-2\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>"
+          }
+        },
+        "footer_link_yELnpi": {
+          "type": "footer-link",
+          "settings": {
+            "title": "Contact Us",
+            "url": "shopify://pages/contact",
+            "svg": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-mail\" viewbox=\"0 0 24 24\"><path d=\"m7 9 5 3.5L17 9\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M2 17V7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z\" stroke=\"#000\"></path></svg>"
+          }
+        },
+        "footer_link_ppPMEL": {
+          "type": "footer-link",
+          "settings": {
+            "title": "About",
+            "url": "shopify://pages/about",
+            "svg": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-heart\" viewbox=\"0 0 24 24\"><path d=\"M22 8.862a5.95 5.95 0 0 1-1.654 4.13c-2.441 2.531-4.809 5.17-7.34 7.608-.581.55-1.502.53-2.057-.045l-7.295-7.562c-2.205-2.286-2.205-5.976 0-8.261a5.58 5.58 0 0 1 8.08 0l.266.274.265-.274A5.612 5.612 0 0 1 16.305 3c1.52 0 2.973.624 4.04 1.732A5.95 5.95 0 0 1 22 8.862z\" stroke=\"#000\" stroke-linejoin=\"round\"></path></svg>"
+          }
+        },
+        "footer_link_hrJWtw": {
+          "type": "footer-link",
+          "settings": {
+            "title": "Search",
+            "url": "shopify://collections",
+            "svg": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-search\" viewbox=\"0 0 24 24\"><g stroke=\"currentColor\"><path d=\"M10.85 2c2.444 0 4.657.99 6.258 2.592A8.85 8.85 0 1 1 10.85 2ZM17.122 17.122 22 22\"></path></g></svg>"
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Stay in Touch",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Keep in touch with all the latest at Doolittle Stitchery</p>",
+            "button_text": "Join",
+            "show_arrow": false,
+            "terms": false,
+            "show_name": true,
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline"
+          }
+        }
+      },
+      "block_order": [
+        "social_link_MXTU84",
+        "social_link_VCdUgT",
+        "footer_link_7LcJCG",
+        "footer_link_jDYtrN",
+        "footer_link_yELnpi",
+        "footer_link_ppPMEL",
+        "footer_link_hrJWtw",
+        "newsletter"
+      ],
+      "custom_css": [
+        ".footer__block.footer__block--image {display: flex; justify-content: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-08226272-bcb7-4bcd-bdcd-78f787cff5e8",
+        "padding_top": 75,
+        "padding_bottom": 44
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

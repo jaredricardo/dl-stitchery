@@ -1,4 +1,22 @@
-{%- assign color_scheme = 'color-' | append: section.settings.color_scheme -%}
+{%- liquid
+  assign color_scheme = 'color-' | append: section.settings.color_scheme
+  assign has_left = false
+  assign has_right = false
+  if section.settings.image_left
+    assign has_left = true
+  endif
+  if section.settings.image_right
+    assign has_right = true
+  endif
+  assign grid_mod = ''
+  if has_left == false and has_right == false
+    assign grid_mod = 'image-with-layout__grid--no-images'
+  elsif has_left == false
+    assign grid_mod = 'image-with-layout__grid--no-left'
+  elsif has_right == false
+    assign grid_mod = 'image-with-layout__grid--no-right'
+  endif
+-%}
 
 {% style %}
 
@@ -27,26 +45,38 @@
     }
 
     [data-section-id="{{ section.id }}"] .image-with-layout__grid {
-      grid-template-columns: 1.5fr 3fr 1.5fr;
+      grid-template-columns: {{ section.settings.image_col_width }}fr {{ section.settings.content_col_width }}fr {{ section.settings.image_col_width }}fr;
+    }
+
+    [data-section-id="{{ section.id }}"] .image-with-layout__grid--no-left {
+      grid-template-columns: {{ section.settings.content_col_width }}fr {{ section.settings.image_col_width }}fr;
+    }
+
+    [data-section-id="{{ section.id }}"] .image-with-layout__grid--no-right {
+      grid-template-columns: {{ section.settings.image_col_width }}fr {{ section.settings.content_col_width }}fr;
+    }
+
+    [data-section-id="{{ section.id }}"] .image-with-layout__grid--no-images {
+      grid-template-columns: 1fr;
+      max-width: 800px;
+      margin: 0 auto;
     }
   }
 
 {% endstyle %}
 
 <section data-section-id="{{ section.id }}" class="image-with-layout {{ color_scheme }}" {% if section.settings.section_anchor_id %} id="{{ section.settings.section_anchor_id }}"{% endif %}>
-  <div class="image-with-layout__grid wrapper--full-padded">
+  <div class="image-with-layout__grid wrapper--full-padded {{ grid_mod }}">
 
+    {% if has_left %}
     <div class="image-with-layout__col image-with-layout__col--image">
-      {% if section.settings.image_left %}
-        <img
-          src="{{ section.settings.image_left | image_url: width: 800 }}"
-          alt="{{ section.settings.image_left_alt | default: section.settings.image_left.alt | escape }}"
-          loading="lazy"
-        >
-      {% else %}
-        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-      {% endif %}
+      <img
+        src="{{ section.settings.image_left | image_url: width: 800 }}"
+        alt="{{ section.settings.image_left_alt | default: section.settings.image_left.alt | escape }}"
+        loading="lazy"
+      >
     </div>
+    {% endif %}
 
     <div class="image-with-layout__col image-with-layout__col--content image-with-layout__col--align-{{ section.settings.content_vertical_align }} image-with-layout__col--text-{{ section.settings.text_alignment }}">
       {% if section.settings.eyebrow != blank %}
@@ -68,17 +98,15 @@
       {% endif %}
     </div>
 
+    {% if has_right %}
     <div class="image-with-layout__col image-with-layout__col--image">
-      {% if section.settings.image_right %}
-        <img
-          src="{{ section.settings.image_right | image_url: width: 800 }}"
-          alt="{{ section.settings.image_right_alt | default: section.settings.image_right.alt | escape }}"
-          loading="lazy"
-        >
-      {% else %}
-        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-      {% endif %}
+      <img
+        src="{{ section.settings.image_right | image_url: width: 800 }}"
+        alt="{{ section.settings.image_right_alt | default: section.settings.image_right.alt | escape }}"
+        loading="lazy"
+      >
     </div>
+    {% endif %}
 
   </div>
 </section>
@@ -219,6 +247,30 @@
         { "label": "Outline", "value": "btn--outline" },
         { "label": "Text", "value": "btn--text" }
       ]
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "image_col_width",
+      "label": "Image column width",
+      "min": 1,
+      "max": 5,
+      "step": 0.5,
+      "default": 1.5,
+      "info": "Relative width of each image column"
+    },
+    {
+      "type": "range",
+      "id": "content_col_width",
+      "label": "Content column width",
+      "min": 1,
+      "max": 8,
+      "step": 0.5,
+      "default": 3,
+      "info": "Relative width of the content column"
     },
     {
       "type": "header",

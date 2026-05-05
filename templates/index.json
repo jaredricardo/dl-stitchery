@@ -90,14 +90,6 @@
             "title": ""
           }
         },
-        "collection_item_kz6jMQ": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "",
-            "collection_url": "",
-            "title": ""
-          }
-        },
         "collection_item_HqP4qG": {
           "type": "collection_item",
           "settings": {
@@ -113,7 +105,6 @@
         "collection_item_w4CbA3",
         "collection_item_QGcDnw",
         "collection_item_gBtrbE",
-        "collection_item_kz6jMQ",
         "collection_item_HqP4qG"
       ],
       "name": "Collection Scroller",
@@ -146,9 +137,11 @@
         "content_vertical_align": "center",
         "button_text": "About Us",
         "button_url": "shopify://pages/about",
-        "button_type": "btn--primary",
+        "button_type": "btn--white",
         "button_size": "",
         "button_style": "btn--solid",
+        "image_col_width": 1.5,
+        "content_col_width": 3,
         "padding_top": 40,
         "padding_bottom": 40,
         "padding_top_mobile": 20,
@@ -275,10 +268,12 @@
     },
     "176897526404e90a93": {
       "type": "_blocks",
+      "disabled": true,
       "settings": {}
     },
     "simple_image_section_j7z4rr": {
       "type": "simple-image-section",
+      "disabled": true,
       "name": "Simple Image Section",
       "settings": {
         "background_color": "#4761a6",
@@ -290,6 +285,107 @@
         "desktop_height": "50",
         "mobile_height": "50"
       }
+    },
+    "simple_image_with_layout_QXfV33": {
+      "type": "simple-image-with-layout",
+      "custom_css": [],
+      "name": "Image with layout",
+      "settings": {
+        "section_anchor_id": "",
+        "color_scheme": "scheme-08226272-bcb7-4bcd-bdcd-78f787cff5e8",
+        "image_left_alt": "",
+        "image_right": "shopify://shop_images/Sail_Boats_Pillow_-_P125.png",
+        "image_right_alt": "",
+        "eyebrow": "",
+        "heading": "Doolittle designs",
+        "subheading": "",
+        "body_text": "<p>Doolittle Stitchery is a celebration of artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Elizabeth “Beth” Nagle and her daughters, Tess and Grace, the studio creates needlepoint canvases that feel both timeless and distinctly personal.</p>",
+        "text_alignment": "left",
+        "content_vertical_align": "center",
+        "button_text": "Find a retailer",
+        "button_url": "shopify://pages/retailers",
+        "button_type": "btn--white",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "image_col_width": 1.5,
+        "content_col_width": 3,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "collection_scroller_bVkgNq": {
+      "type": "collection-scroller",
+      "blocks": {
+        "collection_item_eKaX7r": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "ornaments",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_CEqXcn": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "golf-sports",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_WNbRQC": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "animals",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_xBRhL8": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "barns",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_qzVYxL": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "baby-kids",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_3kmgmH": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "bag-tags",
+            "collection_url": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_eKaX7r",
+        "collection_item_CEqXcn",
+        "collection_item_WNbRQC",
+        "collection_item_xBRhL8",
+        "collection_item_qzVYxL",
+        "collection_item_3kmgmH"
+      ],
+      "name": "Collection Scroller",
+      "settings": {
+        "section_anchor_id": "",
+        "header": "New Designs",
+        "bg_color": "#f2f2f2",
+        "image_aspect_ratio": "square",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 32
+      }
     }
   },
   "order": [
@@ -300,6 +396,8 @@
     "section_collection_jjzwEz",
     "section_collection_QtyDpd",
     "176897526404e90a93",
-    "simple_image_section_j7z4rr"
+    "simple_image_section_j7z4rr",
+    "simple_image_with_layout_QXfV33",
+    "collection_scroller_bVkgNq"
   ]
 }

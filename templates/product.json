@@ -34,8 +34,15 @@
           "type": "title",
           "settings": {
             "subheading_option": "none",
-            "heading_font_size": "heading-small",
-            "padding_bottom": 8
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 10
+          }
+        },
+        "description_Yj6GDX": {
+          "type": "description",
+          "settings": {
+            "show_read_more": true,
+            "padding_bottom": 10
           }
         },
         "price": {
@@ -86,6 +93,7 @@
         },
         "accordion": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "style": "collapsible",
             "show_description": true,
@@ -240,6 +248,7 @@
       "block_order": [
         "badges",
         "title",
+        "description_Yj6GDX",
         "price",
         "siblings",
         "variants",
@@ -609,6 +618,7 @@
       "blocks": {
         "related-0": {
           "type": "related",
+          "disabled": true,
           "settings": {
             "product_recommendations_heading": "Related products"
           }

@@ -24880,3 +24880,42 @@ body.has-header-sticky .timeline {
     gap: 1rem;
   }
 }
+
+.custom-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.custom-footer .top-row a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.custom-footer .top-row {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+custom-footer .middle-row { 
+  gap: 1rem;
+}
+
+.custom-footer .middle-row {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-footer .top-row  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
