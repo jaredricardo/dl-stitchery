@@ -9,55 +9,6 @@
  */
 {
   "sections": {
-    "section-divider": {
-      "type": "section-divider",
-      "settings": {
-        "show_line": true,
-        "width": "wrapper--full",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "main-page": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "subheading": "",
-        "show_title": true,
-        "heading_font_size": "heading-large",
-        "show_content": true,
-        "text_font_size": "body-medium",
-        "align_text": "text-center",
-        "width": "wrapper",
-        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "heading_tag": "automatic"
-      }
-    },
-    "1777961918f744204c": {
-      "type": "apps",
-      "blocks": {
-        "k_wholesale_forms_app_embeded_4VRRBg": {
-          "type": "shopify://apps/k-wholesale-forms/blocks/app-embeded/ea2effd4-0dda-488a-a20f-bc2e2585fa99",
-          "settings": {
-            "popup_embedded_id": "whoform-id-516"
-          }
-        }
-      },
-      "block_order": [
-        "k_wholesale_forms_app_embeded_4VRRBg"
-      ],
-      "custom_css": [
-        ".k-popup__form-submit-wrap {display: flex; justify-content: center; align-items: center;}",
-        ".k-popup__powered-by {display: none;}",
-        ".k-popup__text-content p {font-size: 18px;}"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
     "177796289071f1fefc": {
       "type": "_blocks",
       "blocks": {
@@ -77,12 +28,26 @@
         "ai_gen_block_09e9888_MDFJbB"
       ],
       "settings": {}
+    },
+    "main-page": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
     }
   },
   "order": [
-    "section-divider",
-    "main-page",
-    "1777961918f744204c",
-    "177796289071f1fefc"
+    "177796289071f1fefc",
+    "main-page"
   ]
 }
