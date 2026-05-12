@@ -47,6 +47,37 @@
         "show_placeholder": true
       }
     },
+    "section_announcement_3febXM": {
+      "type": "section-announcement",
+      "blocks": {
+        "text_p8EGJx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every Stitch Tells a Story</p>",
+            "text_font_size": "body-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_p8EGJx"
+      ],
+      "name": "Scrolling text",
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 45,
+        "show_border": false,
+        "layout": "marquee",
+        "color_scheme": "scheme-08226272-bcb7-4bcd-bdcd-78f787cff5e8",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "collection_scroller_tjcxN6": {
       "type": "collection-scroller",
       "blocks": {
@@ -390,6 +421,7 @@
   },
   "order": [
     "section-hero-scrolling",
+    "section_announcement_3febXM",
     "collection_scroller_tjcxN6",
     "simple_image_with_layout_zkY6iU",
     "section-double",
