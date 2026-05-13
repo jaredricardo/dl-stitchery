@@ -26,6 +26,7 @@
       ],
       "name": "Image with scrolling text",
       "settings": {
+        "image_1": "shopify://shop_images/Doolittle_Square_Picture.heic",
         "link": "",
         "message_spacing": 30,
         "marquee_speed": 150,
@@ -38,7 +39,6 @@
         "scrolling_align": "align--middle-center",
         "direction": "ticker-rtl",
         "height": "screen-height-two-thirds",
-        "mobile_image": "shopify://shop_images/sewing-tools-flatlay-knolling.jpg",
         "mobile_height": "screen-height-one-half--mobile",
         "color_scheme": "scheme-d02a1833-115f-4cfd-a4f7-8ae9fcfa8de6",
         "overlay_type": "opacity",
@@ -81,62 +81,152 @@
     "collection_scroller_tjcxN6": {
       "type": "collection-scroller",
       "blocks": {
-        "collection_item_YMRzV8": {
+        "collection_item_gXEUWM": {
           "type": "collection_item",
           "settings": {
             "collection": "animals",
-            "collection_url": "",
+            "collection_url": "shopify://collections/animals",
             "title": ""
           }
         },
-        "collection_item_e3HeGX": {
+        "collection_item_mArDgy": {
           "type": "collection_item",
           "settings": {
             "collection": "baby-kids",
-            "collection_url": "",
+            "collection_url": "shopify://collections/baby-kids",
             "title": ""
           }
         },
-        "collection_item_w4CbA3": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "bag-tags",
-            "collection_url": "",
-            "title": ""
-          }
-        },
-        "collection_item_QGcDnw": {
+        "collection_item_HUhfKH": {
           "type": "collection_item",
           "settings": {
             "collection": "barns",
-            "collection_url": "",
+            "collection_url": "shopify://collections/barns",
             "title": ""
           }
         },
-        "collection_item_gBtrbE": {
+        "collection_item_nY7kRp": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "beach",
+            "collection_url": "shopify://collections/beach",
+            "title": ""
+          }
+        },
+        "collection_item_p9NG9X": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "christmas-holidays",
+            "collection_url": "shopify://collections/christmas-holidays",
+            "title": ""
+          }
+        },
+        "collection_item_kwfxxn": {
           "type": "collection_item",
           "settings": {
             "collection": "golf-sports",
+            "collection_url": "shopify://collections/golf-sports",
+            "title": ""
+          }
+        },
+        "collection_item_rTyExU": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "merrit-demerit-badges",
+            "collection_url": "shopify://collections/merrit-demerit-badges",
+            "title": ""
+          }
+        },
+        "collection_item_abWdxR": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "professional-sport-teams",
+            "collection_url": "shopify://collections/professional-sport-teams",
+            "title": ""
+          }
+        },
+        "collection_item_wRUK4B": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "lake-life",
+            "collection_url": "shopify://collections/lake-life",
+            "title": ""
+          }
+        },
+        "collection_item_PdndmR": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "ski-resorts",
             "collection_url": "",
             "title": ""
           }
         },
-        "collection_item_HqP4qG": {
+        "collection_item_9yhKWx": {
           "type": "collection_item",
           "settings": {
-            "collection": "ornaments",
+            "collection": "sun-destinations",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_DtijeC": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "towns-across-america",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_WQGf7X": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "world-destinations",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_QVEhEd": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "universities-colleges",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_KDfWgA": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "weddings",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_zj3kmb": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "zodiacs",
             "collection_url": "",
             "title": ""
           }
         }
       },
       "block_order": [
-        "collection_item_YMRzV8",
-        "collection_item_e3HeGX",
-        "collection_item_w4CbA3",
-        "collection_item_QGcDnw",
-        "collection_item_gBtrbE",
-        "collection_item_HqP4qG"
+        "collection_item_gXEUWM",
+        "collection_item_mArDgy",
+        "collection_item_HUhfKH",
+        "collection_item_nY7kRp",
+        "collection_item_p9NG9X",
+        "collection_item_kwfxxn",
+        "collection_item_rTyExU",
+        "collection_item_abWdxR",
+        "collection_item_wRUK4B",
+        "collection_item_PdndmR",
+        "collection_item_9yhKWx",
+        "collection_item_DtijeC",
+        "collection_item_WQGf7X",
+        "collection_item_QVEhEd",
+        "collection_item_KDfWgA",
+        "collection_item_zj3kmb"
       ],
       "name": "Collection Scroller",
       "settings": {
@@ -163,7 +253,7 @@
         "eyebrow": "",
         "heading": "Doolittle Stitchery",
         "subheading": "",
-        "body_text": "<p>Doolittle Stitchery is a celebration of artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Elizabeth “Beth” Nagle and her daughters, Tess and Grace, the studio creates needlepoint canvases that feel both timeless and distinctly personal.</p>",
+        "body_text": "<p>Doolittle Stitchery is a celebration of artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Elizabeth Nagle and her daughters, Tess and Grace, the studio creates needlepoint canvases that feel both timeless and distinctly personal.</p>",
         "text_alignment": "left",
         "content_vertical_align": "center",
         "button_text": "About Us",
@@ -274,13 +364,13 @@
       "type": "section-collection",
       "name": "Featured collection",
       "settings": {
-        "featured_collection": "all",
+        "featured_collection": "best-sellers",
         "heading": "Best Sellers",
         "heading_font_size": "heading-medium",
         "description": "",
         "text_font_size": "body-medium",
         "layout": "inline",
-        "link_text": "Shop Now",
+        "link_text": "",
         "link_url": "",
         "button_type": "btn--primary",
         "button_size": "btn--large",
@@ -330,7 +420,7 @@
         "eyebrow": "",
         "heading": "Doolittle designs",
         "subheading": "",
-        "body_text": "<p>Doolittle Stitchery is a celebration of artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Elizabeth “Beth” Nagle and her daughters, Tess and Grace, the studio creates needlepoint canvases that feel both timeless and distinctly personal.</p>",
+        "body_text": "<p>Doolittle Stitchery is a celebration of artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Elizabeth Nagle and her daughters, Tess and Grace, the studio creates needlepoint canvases that feel both timeless and distinctly personal.</p>",
         "text_alignment": "left",
         "content_vertical_align": "center",
         "button_text": "Find a retailer",
