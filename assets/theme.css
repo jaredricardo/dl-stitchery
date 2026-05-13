@@ -24923,3 +24923,12 @@ custom-footer .middle-row {
 .temp-hidden {
   display: none;
 }
+
+/* get rid of text suggestions */
+.predictive-search__layout {
+  grid-template-columns: auto !important;
+}
+
+.text-suggestions {
+  display: none;
+}

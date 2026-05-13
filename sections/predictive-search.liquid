@@ -49,7 +49,7 @@
       {%- endif -%}
 
       {%- if first_column_results_size > 0 -%}
-        <div class="predictive-search__column">
+        <div class="predictive-search__column text-suggestions">
           {%- if query_count > 0 or collection_count > 0 -%}
             {%- assign animation_delay = animation_delay | plus: 100 -%}
             <div
