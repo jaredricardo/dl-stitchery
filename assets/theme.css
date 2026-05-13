@@ -24919,3 +24919,7 @@ custom-footer .middle-row {
     justify-content: center;
   }
 }
+
+.temp-hidden {
+  display: none;
+}

@@ -46,12 +46,17 @@
             {% if block.type == 'newsletter' %}
                 <div class="footer__newsletter__wrapper" {{ block.shopify_attributes }}>
                     {%- if block.settings.title != blank -%}
-                        <h2 class="footer__block__title {{ block.settings.heading_font_size }}">{{ block.settings.title }}</h2>
+                        {% comment %} <h2 class="footer__block__title {{ block.settings.heading_font_size }}">{{ block.settings.title }}</h2> {% endcomment %}
+                        <h4 class="footer__block__title" style="text-align: center; text-transform: none;">Doolittle Stitchery 38 Rosewood Lane East Dorset, VT 05253</h4>
+                        <h4 class="footer__block__title" style="text-align: center; text-transform: none;">203-249-7930</h4>
+                        <h4 class="footer__block__title" style="text-align: center; text-transform: none;">doolittlestitchery@gmail.com</h4>
                     {%- endif -%}
                     {%- if block.settings.text != blank -%}
-                        <div class="rte footer__newsletter__text">{{ block.settings.text }}</div>
+                        <div class="rte footer__newsletter__text temp-hidden">{{ block.settings.text }}</div>
                     {%- endif -%}
-                    {%- render 'newsletter-form' block: block, footer: true -%}
+                    <div class="temp-hidden">
+                      {%- render 'newsletter-form' block: block, footer: true -%}
+                    </div>
                 </div>
             {% endif %}
         {% endfor %}
