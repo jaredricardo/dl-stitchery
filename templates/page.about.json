@@ -42,10 +42,11 @@
         "text-0"
       ],
       "custom_css": [
-        "img {object-fit: contain;}"
+        "img {object-fit: contain; max-width: 300px; margin: 0 auto;}",
+        ".image__fill img {left: 50%; transform: translateX(-50%); }"
       ],
       "settings": {
-        "image_1": "shopify://shop_images/DS-PORTRAIT-LOGO-NAV.png",
+        "image_1": "shopify://shop_images/DS_LOGO_BLUE.png",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "",
