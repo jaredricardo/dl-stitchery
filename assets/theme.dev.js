@@ -3464,6 +3464,8 @@
             button.addEventListener('click', () => {
               const drawer = document.querySelector('[data-drawer]');
 
+              if (!drawer) return;
+
               drawer.dispatchEvent(
                 new CustomEvent('theme:drawer:toggle', {
                   bubbles: false,
