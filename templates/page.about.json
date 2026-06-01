@@ -32,7 +32,7 @@
         "text-0": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Doolittle Stitchery is a celebration of artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Elizabeth Nagle and her daughters, Tess and Grace, the studio creates needlepoint canvases that feel both timeless and distinctly personal.</strong></p><p><strong>The name traces back to Doolittle Lake in Connecticut, where long summer afternoons were spent stitching side by side—moments of calm, creativity, and connection that continue to shape the spirit of the brand.</strong></p><p><strong>Beth’s lifelong devotion to needlepoint, from her early training in London to decades of design work, lends each canvas a sense of depth and refinement. Her aesthetic is classic yet inviting—rooted in tradition, but never bound by it.</strong></p><p><strong>Together, Tess and Grace bring a new dimension to the studio. Through Hello Tess Designs, Tess introduces a fresh, expressive perspective, while Grace’s work reflects a deep belief in the restorative, almost meditative rhythm of stitching.</strong></p>",
+            "text": "<p>Doolittle Stitchery is rooted in artistry, heritage, and the quiet beauty of making something by hand. Founded by artist Beth Nagle, Doolittle Stitchery creates needlepoint canvases that are fresh yet timeless and universal yet distinctly personal</p><p>The name traces back to Doolittle Lake in Connecticut, where long summer afternoons were spent stitching side by side - moments of calm, creativity, and connection that continue to shape the spirit of the brand. </p><p>Beth’s lifelong devotion to needlepoint, from her early training in London England to decades of design work, lends each canvas a sense of depth, precision and refinement. Her aesthetic is classic and rooted in tradition, but never bound by it. </p><p>Beth is now happily joined by her  daughters, Tess and Grace, who bring a new dimension to the studio. Through  Hello Tess Designs, Tess introduces a more contemporary aesthetic to the line. Grace joins with a passion for stitching and a deep belief in the restorative, healing and stress relief that the meditative rhythm of stitching provides. </p><p>At Doolittle Stitchery, we believe that needlepoint is more than a craft - it is a creative ritual, a source of beauty, a way to relax, and a way to hold onto meaningful moments.  Each canvas is designed to be savored in the making and treasured long after the final stitch.</p>",
             "text_font_size": "body-large",
             "padding_bottom": 16
           }
@@ -43,7 +43,7 @@
       ],
       "custom_css": [
         "img {object-fit: contain; max-width: 300px; margin: 0 auto;}",
-        ".image__fill img {left: 50%; transform: translateX(-50%); }"
+        ".image__fill img {left: 50%; transform: translateX(-50%);}"
       ],
       "settings": {
         "image_1": "shopify://shop_images/DS_LOGO_BLUE.png",
@@ -62,6 +62,7 @@
     },
     "section_video_9AbrjL": {
       "type": "section-video",
+      "disabled": true,
       "name": "Video",
       "settings": {
         "video": "shopify://files/videos/Hero-Lime-Zest (3).mp4",
