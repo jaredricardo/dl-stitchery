@@ -67,65 +67,155 @@
         "padding_bottom": 0
       }
     },
-    "collection_scroller_TL3mpP": {
+    "collection_scroller_gJzGbg": {
       "type": "collection-scroller",
       "blocks": {
-        "collection_item_ppq9nC": {
+        "collection_item_rLzTE9": {
           "type": "collection_item",
           "settings": {
             "collection": "animals",
-            "collection_url": "",
+            "collection_url": "shopify://collections/animals",
             "title": ""
           }
         },
-        "collection_item_dUjTFW": {
+        "collection_item_jbPwCn": {
           "type": "collection_item",
           "settings": {
             "collection": "baby-kids",
-            "collection_url": "",
+            "collection_url": "shopify://collections/baby-kids",
             "title": ""
           }
         },
-        "collection_item_jBeNKt": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "bag-tags",
-            "collection_url": "",
-            "title": ""
-          }
-        },
-        "collection_item_kggb34": {
+        "collection_item_aMKEV3": {
           "type": "collection_item",
           "settings": {
             "collection": "barns",
-            "collection_url": "",
+            "collection_url": "shopify://collections/barns",
             "title": ""
           }
         },
-        "collection_item_B8mQGE": {
+        "collection_item_yrTBY7": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "beach",
+            "collection_url": "shopify://collections/beach",
+            "title": ""
+          }
+        },
+        "collection_item_TBaYjh": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "christmas-holidays",
+            "collection_url": "shopify://collections/christmas-holidays",
+            "title": ""
+          }
+        },
+        "collection_item_jQ8ddM": {
           "type": "collection_item",
           "settings": {
             "collection": "golf-sports",
+            "collection_url": "shopify://collections/golf-sports",
+            "title": ""
+          }
+        },
+        "collection_item_cUXc7m": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "merrit-demerit-badges",
+            "collection_url": "shopify://collections/merrit-demerit-badges",
+            "title": ""
+          }
+        },
+        "collection_item_wbcQzL": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "professional-sport-teams",
+            "collection_url": "shopify://collections/professional-sport-teams",
+            "title": ""
+          }
+        },
+        "collection_item_CFc3QB": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "lake-life",
+            "collection_url": "shopify://collections/lake-life",
+            "title": ""
+          }
+        },
+        "collection_item_zeJgBe": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "ski-resorts",
             "collection_url": "",
             "title": ""
           }
         },
-        "collection_item_XYneU9": {
+        "collection_item_mQe8Eg": {
           "type": "collection_item",
           "settings": {
-            "collection": "ornaments",
+            "collection": "sun-destinations",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_mNyxYB": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "towns-across-america",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_YNyhHc": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "world-destinations",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_eQxWda": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "universities-colleges",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_XYYixz": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "weddings",
+            "collection_url": "",
+            "title": ""
+          }
+        },
+        "collection_item_YMAdit": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "zodiacs",
             "collection_url": "",
             "title": ""
           }
         }
       },
       "block_order": [
-        "collection_item_ppq9nC",
-        "collection_item_dUjTFW",
-        "collection_item_jBeNKt",
-        "collection_item_kggb34",
-        "collection_item_B8mQGE",
-        "collection_item_XYneU9"
+        "collection_item_rLzTE9",
+        "collection_item_jbPwCn",
+        "collection_item_aMKEV3",
+        "collection_item_yrTBY7",
+        "collection_item_TBaYjh",
+        "collection_item_jQ8ddM",
+        "collection_item_cUXc7m",
+        "collection_item_wbcQzL",
+        "collection_item_CFc3QB",
+        "collection_item_zeJgBe",
+        "collection_item_mQe8Eg",
+        "collection_item_mNyxYB",
+        "collection_item_YNyhHc",
+        "collection_item_eQxWda",
+        "collection_item_XYYixz",
+        "collection_item_YMAdit"
       ],
       "name": "Collection Scroller",
       "settings": {
@@ -145,6 +235,6 @@
     "collection-image-with-title",
     "subcollections",
     "collection",
-    "collection_scroller_TL3mpP"
+    "collection_scroller_gJzGbg"
   ]
 }
