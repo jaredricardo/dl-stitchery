@@ -273,7 +273,7 @@
       "settings": {
         "section_anchor_id": "",
         "color_scheme": "scheme-08226272-bcb7-4bcd-bdcd-78f787cff5e8",
-        "image_left": "shopify://shop_images/logo.png",
+        "image_left": "shopify://shop_images/DS_MAIN_LOGO_WHT.png",
         "image_left_alt": "",
         "image_right_alt": "",
         "eyebrow": "",
@@ -288,11 +288,11 @@
         "button_size": "",
         "button_style": "btn--solid",
         "image_col_width": 1.5,
-        "content_col_width": 3,
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20
+        "content_col_width": 4,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_mobile": 12,
+        "padding_bottom_mobile": 12
       }
     },
     "section-double": {
