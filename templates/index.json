@@ -270,7 +270,7 @@
     "simple_image_with_layout_zkY6iU": {
       "type": "simple-image-with-layout",
       "custom_css": [
-        ".image-with-layout__grid{align-items: center; justify-content: center;}"
+        ".image-with-layout__grid {align-items: center; justify-content: center;}"
       ],
       "name": "Image with layout",
       "settings": {
@@ -292,9 +292,9 @@
         "button_style": "btn--solid",
         "image_col_width": 1.5,
         "content_col_width": 4,
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "padding_top_mobile": 12,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 8,
         "padding_bottom_mobile": 12
       }
     },
