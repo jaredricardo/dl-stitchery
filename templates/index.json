@@ -493,78 +493,6 @@
         "padding_bottom": 50,
         "heading_tag": "automatic"
       }
-    },
-    "collection_scroller_bVkgNq": {
-      "type": "collection-scroller",
-      "blocks": {
-        "collection_item_eKaX7r": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "ornaments",
-            "collection_url": "",
-            "title": ""
-          }
-        },
-        "collection_item_CEqXcn": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "golf-sports",
-            "collection_url": "",
-            "title": ""
-          }
-        },
-        "collection_item_WNbRQC": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "animals",
-            "collection_url": "",
-            "title": ""
-          }
-        },
-        "collection_item_xBRhL8": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "barns",
-            "collection_url": "",
-            "title": ""
-          }
-        },
-        "collection_item_qzVYxL": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "baby-kids",
-            "collection_url": "",
-            "title": ""
-          }
-        },
-        "collection_item_3kmgmH": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "bag-tags",
-            "collection_url": "",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection_item_eKaX7r",
-        "collection_item_CEqXcn",
-        "collection_item_WNbRQC",
-        "collection_item_xBRhL8",
-        "collection_item_qzVYxL",
-        "collection_item_3kmgmH"
-      ],
-      "name": "Collection Scroller",
-      "settings": {
-        "section_anchor_id": "",
-        "header": "New Designs",
-        "bg_color": "#f2f2f2",
-        "image_aspect_ratio": "square",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 32
-      }
     }
   },
   "order": [
@@ -578,7 +506,6 @@
     "176897526404e90a93",
     "simple_image_section_j7z4rr",
     "simple_image_with_layout_QXfV33",
-    "section_collection_wD8bVi",
-    "collection_scroller_bVkgNq"
+    "section_collection_wD8bVi"
   ]
 }
