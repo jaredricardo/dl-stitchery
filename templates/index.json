@@ -467,6 +467,33 @@
         "padding_bottom_mobile": 20
       }
     },
+    "section_collection_wD8bVi": {
+      "type": "section-collection",
+      "name": "Featured collection",
+      "settings": {
+        "featured_collection": "new-arrivals",
+        "heading": "New Designs",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "text_font_size": "body-medium",
+        "layout": "inline",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "btn--large",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout_desktop": "grid",
+        "grid": 5,
+        "rows": 2,
+        "width": "wrapper",
+        "layout_mobile": "slider",
+        "color_scheme": "scheme-53b0d1bd-154b-4f31-b551-ed748bd58e9b",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
     "collection_scroller_bVkgNq": {
       "type": "collection-scroller",
       "blocks": {
@@ -551,6 +578,7 @@
     "176897526404e90a93",
     "simple_image_section_j7z4rr",
     "simple_image_with_layout_QXfV33",
+    "section_collection_wD8bVi",
     "collection_scroller_bVkgNq"
   ]
 }
