@@ -269,6 +269,9 @@
     },
     "simple_image_with_layout_zkY6iU": {
       "type": "simple-image-with-layout",
+      "custom_css": [
+        ".image-with-layout__grid{align-items: center; justify-content: center;}"
+      ],
       "name": "Image with layout",
       "settings": {
         "section_anchor_id": "",
