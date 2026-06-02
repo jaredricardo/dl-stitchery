@@ -153,14 +153,25 @@
         aria-label="Select a state"
       >
         <option value="">{{ block.settings.placeholder_text }}</option>
+        {% assign state_pairs = '' %}
         {% for i in (1..50) %}
           {% liquid
             assign state_name_key = 'state_' | append: i | append: '_name'
             assign state_name = block.settings[state_name_key]
           %}
           {% if state_name != blank %}
-            <option value="state-{{ i }}">{{ state_name }}</option>
+            {% assign pair = state_name | append: '|||' | append: i %}
+            {% if state_pairs == '' %}
+              {% assign state_pairs = pair %}
+            {% else %}
+              {% assign state_pairs = state_pairs | append: '~~~' | append: pair %}
+            {% endif %}
           {% endif %}
+        {% endfor %}
+        {% assign sorted_pairs = state_pairs | split: '~~~' | sort %}
+        {% for pair in sorted_pairs %}
+          {% assign parts = pair | split: '|||' %}
+          <option value="state-{{ parts[1] }}">{{ parts[0] }}</option>
         {% endfor %}
       </select>
     </div>

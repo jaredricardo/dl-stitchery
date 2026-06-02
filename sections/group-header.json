@@ -51,7 +51,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "header_sticky": false,
+        "header_sticky": true,
         "enable_search": true,
         "header_style": "logo_center_menu_left",
         "show_separator_line": false,
@@ -96,7 +96,7 @@
             "mobile_menu_linklist": "main-menu",
             "text_font_size": "body-x-large",
             "highlight_item": "Sale",
-            "highlight_item_color": "#D02E2E",
+            "highlight_item_color": "#d02e2e",
             "padding": false,
             "padding_bottom": 14
           }

@@ -43,20 +43,21 @@
       ],
       "custom_css": [
         "img {object-fit: contain; max-width: 300px; margin: 0 auto;}",
-        ".image__fill img {left: 50%; transform: translateX(-50%);}"
+        ".image__fill img {left: 50%; transform: translateX(-50%);}",
+        ".brick__block__text {padding: 0;}"
       ],
       "settings": {
         "image_1": "shopify://shop_images/DS_LOGO_BLUE.png",
-        "image_width": "one-half",
-        "text_alignment": "text-left",
+        "image_column_width": 30,
+        "text_alignment": "text-center",
         "layout": "",
-        "width": "wrapper--full",
+        "width": "wrapper",
         "height": "screen-height-one-half",
         "mobile_height": "image-height--mobile",
         "reverse_blocks": false,
         "color_scheme": "scheme-53b0d1bd-154b-4f31-b551-ed748bd58e9b",
-        "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_top": 30,
+        "padding_bottom": 30,
         "show_placeholder": true
       }
     },
@@ -120,7 +121,7 @@
       "disabled": true,
       "settings": {
         "image_1": "shopify://shop_images/Sail_Boats_Pillow_-_P125.png",
-        "image_width": "one-half",
+        "image_column_width": 50,
         "text_alignment": "text-left",
         "layout": "is-reversed",
         "width": "wrapper",

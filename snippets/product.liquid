@@ -447,7 +447,6 @@
 
                   {%- when 'inventory_countdown' -%}
                     {%- render 'product-inventory', product: product, block: block, block_style: block_style -%}
-
                   {%- when 'upsell', 'bundle-save' -%}
                     {%- liquid
                       if block.type == 'upsell'

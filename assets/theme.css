@@ -6937,6 +6937,10 @@ body:has(.main-content > .shopify-section.section-overlay-header:first-of-type):
   --bg: var(--text);
 }
 
+cart-count {
+  background: #4761A6 !important;
+}
+
 .header__menu {
   z-index: 5;
   display: flex;
@@ -24890,12 +24894,24 @@ body.has-header-sticky .timeline {
   padding-right: 1.5rem;
 }
 
-.custom-footer .top-row a {
+.custom-footer .top-row a,
+.custom-footer .top-row .footer-search-trigger {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+}
+
+.custom-footer .top-row .footer-search-trigger {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
 }
 
 .custom-footer .top-row {

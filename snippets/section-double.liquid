@@ -37,39 +37,28 @@
     endfor
   endif
 
+  assign image_col_width = section.settings.image_column_width | default: 50
+
   capture style
     echo '--PT: ' | append: section.settings.padding_top | append: 'px;'
     echo '--PB: ' | append: section.settings.padding_bottom | append: 'px;'
+    echo '--image-col-width: ' | append: image_col_width | append: '%;'
   endcapture
 
   assign image_1 = section.settings.image_1
   assign image_2 = section.settings.image_2
-  assign image_width = section.settings.image_width
   capture sizes
     if image_1 and image_2
-      if image_width == 'three-quarters'
-        echo '(min-width: 750px) 37.5vw, 100vw'
-      else
-        echo '(min-width: 750px) 25vw, 100vw'
-      endif
+      echo '(min-width: 750px) calc(' | append: image_col_width | append: 'vw / 2), 100vw'
     else
-      if image_width == 'three-quarters'
-        echo '(min-width: 750px) 75vw, 100vw'
-      else
-        echo '(min-width: 750px) 50vw, 100vw'
-      endif
+      echo '(min-width: 750px) ' | append: image_col_width | append: 'vw, 100vw'
     endif
   endcapture
 
   assign figure_width_class = ''
-  assign item_sizes_width = '50vw'
+  assign item_sizes_width = image_col_width | append: 'vw'
   assign item_placeholder = '||number-items-placeholder||'
   assign item_per_row_medium = item_placeholder
-  if image_width == 'three-quarters'
-    assign figure_width_class = ' brick__block--three-quarters'
-    assign item_sizes_width = '35vw'
-    assign item_per_row_medium = 1
-  endif
 
   assign item_sizes_padding_desktop = '100px'
   assign item_sizes_padding_tablet = '60px'
@@ -130,6 +119,14 @@
     </div>
   {%- endif -%}
 {%- endcapture -%}
+
+<style>
+  @media only screen and (min-width: 750px) {
+    #BrickSection--{{ section.id }} .brick__block--images {
+      flex: 0 0 var(--image-col-width, 50%);
+    }
+  }
+</style>
 
 <section
   id="BrickSection--{{ section.id }}"
@@ -549,11 +546,7 @@
                       capture sizes
                         assign image_size_mobile = 'calc((100vw - 64px) * ' | append: image_width_ratio | append: ')'
 
-                        if image_width == 'three-quarters'
-                          assign image_size_desktop = 'calc((35vw * 0.76 - 64px) * ' | append: image_width_ratio | append: ')'
-                        else
-                          assign image_size_desktop = 'calc((50vw * 0.76 - 64px) * ' | append: image_width_ratio | append: ')'
-                        endif
+                        assign image_size_desktop = 'calc((' | append: image_col_width | append: 'vw * 0.76 - 64px) * ' | append: image_width_ratio | append: ')'
 
                         echo '(min-width: 750px) ' | append: image_size_desktop | append: ', ' | append: image_size_mobile
                       endcapture

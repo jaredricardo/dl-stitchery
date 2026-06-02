@@ -637,9 +637,11 @@
   {% unless customer.tags contains 'b2b' %}
     <style>
       quick-add-product,
-      product-form {
+      product-form,
+      .variant__countdown,
+      .product-item__price__holder {
         display: none !important;
-      }
+    }
     </style>
   {% endunless %}
 {% endif %}

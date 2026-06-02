@@ -13,6 +13,27 @@
   }
 {%- endstyle -%}
 
+<script>
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.footer-search-trigger').forEach((btn) => {
+      btn.addEventListener('click', function () {
+        // Find the currently visible header-search-popdown (desktop vs mobile)
+        let targetPopdown = null;
+        document.querySelectorAll('header-search-popdown').forEach((popdown) => {
+          if (!targetPopdown && popdown.offsetParent !== null) {
+            targetPopdown = popdown;
+          }
+        });
+        if (targetPopdown) {
+          const details = targetPopdown.querySelector('details');
+          if (details) details.setAttribute('open', '');
+          if (typeof targetPopdown.open === 'function') targetPopdown.open();
+        }
+      });
+    });
+  });
+</script>
 <footer
   class="site-footer-wrapper section-padding {{ color_scheme }} custom-footer"
   data-section-id="{{ section.id }}"
@@ -21,12 +42,21 @@
     <div class="top-row">
         {% for block in section.blocks %}
             {% if block.type == 'footer-link' %}
-                <a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>
-                    {% if block.settings.svg != blank %}
-                        <span>{{ block.settings.svg }}</span>
-                    {% endif %}
-                    {{ block.settings.title }}
-                </a>
+                {% if block.settings.trigger_search %}
+                    <button type="button" class="footer-search-trigger" {{ block.shopify_attributes }} aria-label="Open search">
+                        {% if block.settings.svg != blank %}
+                            <span>{{ block.settings.svg }}</span>
+                        {% endif %}
+                        {{ block.settings.title }}
+                    </button>
+                {% else %}
+                    <a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>
+                        {% if block.settings.svg != blank %}
+                            <span>{{ block.settings.svg }}</span>
+                        {% endif %}
+                        {{ block.settings.title }}
+                    </a>
+                {% endif %}
             {% endif %}
         {% endfor %}
     </div>
@@ -108,6 +138,13 @@
       "type": "footer-link",
       "name": "Footer Link",
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "trigger_search",
+          "label": "Trigger search bar on click",
+          "default": false,
+          "info": "When enabled, clicking this link opens the search bar instead of following the URL."
+        },
         {
           "type": "text",
           "id": "title",

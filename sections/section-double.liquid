@@ -24,14 +24,15 @@
       "info": "Displays both images at a 50% width. 2000 x 1400px .jpg recommended. [Learn more](http://presidiodev.com/link/broadcast/images)"
     },
     {
-      "type": "select",
-      "id": "image_width",
-      "label": "Image width",
-      "default": "one-half",
-      "options": [
-        {"value": "one-half", "label": "50%"},
-        {"value": "three-quarters", "label": "75%"}
-      ]
+      "type": "range",
+      "id": "image_column_width",
+      "label": "Image column width (desktop)",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "%",
+      "default": 50,
+      "info": "Overrides image column width on desktop. Text column fills remaining space. Mobile is unaffected."
     },
     {
       "type": "header",
