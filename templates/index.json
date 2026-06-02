@@ -269,6 +269,9 @@
     },
     "simple_image_with_layout_zkY6iU": {
       "type": "simple-image-with-layout",
+      "custom_css": [
+        ".image-with-layout__grid {justify-content: center; align-items: center;}"
+      ],
       "name": "Image with layout",
       "settings": {
         "section_anchor_id": "",
@@ -289,10 +292,10 @@
         "button_style": "btn--solid",
         "image_col_width": 1.5,
         "content_col_width": 3,
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_top_mobile": 8,
+        "padding_bottom_mobile": 8
       }
     },
     "section-double": {
