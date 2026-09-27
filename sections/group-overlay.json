@@ -21,15 +21,6 @@
             "text_font_size": "body-medium"
           }
         },
-        "free-shipping": {
-          "type": "free-shipping",
-          "settings": {
-            "message": "You are ||amount|| away from free shipping.",
-            "text_font_size": "body-x-small",
-            "color_scheme": "",
-            "pin_to_bottom": false
-          }
-        },
         "products": {
           "type": "products",
           "settings": {
@@ -68,7 +59,6 @@
       },
       "block_order": [
         "title",
-        "free-shipping",
         "products",
         "upsell-products",
         "order-note",
