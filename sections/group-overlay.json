@@ -42,12 +42,6 @@
             "pin_to_bottom": false
           }
         },
-        "gift-note": {
-          "type": "gift-note",
-          "settings": {
-            "pin_to_bottom": false
-          }
-        },
         "checkout-buttons": {
           "type": "checkout-buttons",
           "settings": {
@@ -62,7 +56,6 @@
         "products",
         "upsell-products",
         "order-note",
-        "gift-note",
         "checkout-buttons"
       ],
       "settings": {
